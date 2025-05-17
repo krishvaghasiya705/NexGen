@@ -1,50 +1,56 @@
 "use client";
 import React, { useState } from "react";
 import styles from "./header.module.scss";
-import Logo from "@/assets/icon/logo";
-import CommonButton from "@/components/commonbutton/buttons";
 import Link from "next/link";
-import Menuicon from "@/assets/icon/menuicon";
-import Sidebar from "../sidebar";
-import Crossicon from "@/assets/icon/crossicon";
+import Logo from "@/assets/icon/logo";
 
 export default function Header() {
-  const [isSidebarOpen, setSidebarOpen] = useState(false);
+  // const [isSidebarOpen, setSidebarOpen] = useState(false);
 
-  const toggleSidebar = () => {
-    setSidebarOpen(!isSidebarOpen);
-  };
+  // const toggleSidebar = () => {
+  //   setSidebarOpen(!isSidebarOpen);
+  // };
 
   return (
     <>
       <header className={styles.header}>
         <div className="container">
-          <div className={styles.headerflx}>
+          <div className={styles.headerflxmain}>
             <div className={styles.headerlogo}>
               <Link href={"/"}>
                 <Logo />
               </Link>
             </div>
-            <div className={styles.headerlinks}>
-              <Link href={"/"} className={styles.active}>
-                Home
+            <div className={styles.headerlinksflxmain}>
+              <Link href={"/"} className={`${styles.headerlink} ${styles.active}`}>
+                <span>Home</span>
               </Link>
-              <Link href={"/"}>Blog</Link>
-              <Link href={"/"}>Contact</Link>
-              <Link href={"/"}>News</Link>
-            </div>
-            <CommonButton
-              Linkpath="/"
-              Text="Get Started"
-              Buttonclass="commonbuttondark"
-            />
-            <div className={styles.headermenuicon} onClick={toggleSidebar}>
-              {isSidebarOpen ? <Crossicon /> : <Menuicon />}
+              <Link href={"/"} className={styles.headerlink}>
+                <span>Services</span>
+              </Link>
+              <Link href={"/"} className={styles.headerlink}>
+                <span>Projects</span>
+              </Link>
+              <Link href={"/"} className={styles.headerlink}>
+                <span>About</span>
+              </Link>
+              <Link href={"/"} className={styles.headerlink}>
+                <span>Careers</span>
+              </Link>
+              <Link href={"/"} className={styles.headerlink}>
+                <span>Blogs</span>
+              </Link>
+              <Link href={"/"} className={styles.contactbutton}>
+                <span>Contact Us</span>
+              </Link>
             </div>
           </div>
         </div>
       </header>
-      <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+      {/* <div className={styles.headermenuicon} onClick={toggleSidebar}>
+              {isSidebarOpen ? <Crossicon /> : <Menuicon />}
+            </div> */}
+      {/* <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} /> */}
     </>
   );
 }

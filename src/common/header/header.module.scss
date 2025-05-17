@@ -1,0 +1,82 @@
+@use "@/styles/mixin" as *;
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    padding: 30px 0 20px 0;
+    
+    @media (max-width:768px) {
+        padding: 20px 0;
+    }
+
+    .headerflx {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--lightblue);
+        border: 1px solid var(--border1);
+        padding: 13px 20px;
+        border-radius: 16px;
+
+        .headerlogo {
+            a {
+                @media (max-width:768px) {
+                    display: block !important;
+                }
+            }
+        }
+
+        .headerlinks {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            @media (max-width:768px) {
+                display: none;
+            }
+
+            a {
+                @include font20;
+                color: var(--black3muted);
+                transition: .4s ease-in-out;
+
+                &:hover {
+                    color: var(--black2);
+                }
+            }
+
+            .active {
+                color: var(--black2);
+            }
+        }
+
+        a {
+            @media (max-width:768px) {
+                display: none;
+            }
+        }
+
+        .headermenuicon {
+            display: none;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            
+            @media (max-width:768px) {
+                display: block;
+            }
+            
+            @media (max-width:576px) {
+                width: 25px;
+                height: 25px;
+            }
+
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

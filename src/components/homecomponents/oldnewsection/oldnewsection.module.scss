@@ -1,0 +1,224 @@
+@use "@/styles/mixin" as *;
+
+.oldnewsectionmain {
+  padding: 100px 0;
+  position: relative;
+  background-color: var(--lightblue);
+
+  @media (max-width: 1024px) {
+    padding: 80px 0;
+  }
+
+  @media (max-width: 768px) {
+    padding: 70px 0;
+  }
+
+  @media (max-width: 576px) {
+    padding: 60px 0;
+  }
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 179px;
+    content: "";
+    background-image: url("../../../assets/image/bgnetsckew.png");
+    z-index: 1;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .oldnewsection {
+    position: relative;
+    z-index: 2;
+
+    .oldnewsectiontitle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 50px;
+
+      h3 {
+        max-width: 1049px;
+        @include font48;
+        color: var(--black2);
+        margin-bottom: 18px;
+
+        span {
+          color: var(--border3);
+        }
+
+        @media (max-width: 1024px) {
+          @include font40;
+        }
+
+        @media (max-width: 768px) {
+          @include font30;
+        }
+
+        @media (max-width: 576px) {
+          @include font28;
+        }
+      }
+
+      p {
+        max-width: 913px;
+        @include font18;
+        color: var(--black2muted);
+
+        @media (max-width: 576px) {
+          @include font16;
+        }
+      }
+    }
+
+    .oldnewsectioncontentmain {
+      background-color: var(--white);
+      border: 1px solid var(--border1);
+      border-radius: 30px;
+      padding: 40px;
+      // display: flex;
+      // justify-content: space-between;
+      display: grid;
+      grid-template-columns: 1fr 287px 1fr;
+      gap: 30px;
+      position: relative;
+
+      @media (max-width: 1024px) {
+        // flex-direction: column;
+        grid-template-columns: 1fr;
+        padding: 30px;
+      }
+
+      @media (max-width: 768px) {
+        padding: 20px;
+      }
+
+      .oldnewsectioncontent {
+        max-width: 620px;
+        h4 {
+          @include font24;
+          color: var(--black2);
+
+          @media (max-width: 768px) {
+            @include font22;
+          }
+
+          @media (max-width: 576px) {
+            @include font20;
+          }
+        }
+
+        .oldnewsectioncontentflx {
+          margin-top: 30px;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+
+          @media (max-width: 768px) {
+            margin-top: 20px;
+          }
+
+          .oldnewflx {
+            .oldnewflxtitle {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              margin-bottom: 12px;
+
+              @media (max-width: 768px) {
+                margin-bottom: 10px;
+              }
+
+              svg {
+                width: 30px;
+                height: 30px;
+              }
+
+              h5 {
+                @include font20;
+                color: var(--black2);
+
+                @media (max-width: 576px) {
+                  @include font18;
+                }
+              }
+            }
+
+            p {
+              @include font18;
+              color: var(--black2muted);
+
+              @media (max-width: 576px) {
+                @include font16;
+              }
+            }
+          }
+        }
+      }
+
+      .vsimagemain {
+        height: calc(100% + 80px);
+        width: 100%;
+        margin: -20px 0 0 0;
+        // position: absolute;
+        // top: 0;
+        // left: 50%;
+        // left: 48%;
+        // transform: translateX(-50%);
+        // height: 100%;
+        width: 100%;
+        // max-width: 287px;
+
+        @media (max-width: 1024px) {
+          position: relative;
+          left: 0;
+          transform: translateX(0);
+          height: 100%;
+          max-width: 100%;
+          display: none;
+        }
+
+        .vsimagemain {
+          position: relative;
+          height: 100%;
+          width: 100%;
+
+          .vsimage {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+          }
+
+          .vsnameimage {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media (max-width: 1024px) {
+              position: relative;
+              left: 0;
+              top: 0;
+              transform: translate(0);
+            }
+
+            img {
+              max-width: 108px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

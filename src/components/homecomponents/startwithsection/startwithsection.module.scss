@@ -1,0 +1,103 @@
+@use "@/styles/mixin" as *;
+
+.startwithsectionmain {
+  padding-bottom: 100px;
+
+  @media (max-width: 1024px) {
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: 768px) {
+    padding-bottom: 70px;
+  }
+
+  @media (max-width: 576px) {
+    padding-bottom: 60px;
+  }
+
+  .startwithsection {
+    padding: 33px 30px;
+    overflow: hidden;
+    border-radius: 34px;
+    position: relative;
+    background-image: url("../../../assets/image/gradbg.png");
+    background-size: cover;
+
+    @media (max-width:768px) {
+      padding: 30px 20px;
+    }
+
+    &::after {
+      background-image: url("../../../assets/image/bgnet.png");
+      // background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: "";
+      z-index: 2;
+    }
+
+    .startwithsectionbox {
+      max-width: 1320px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 3;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+
+      @media (max-width: 1024px) {
+        flex-direction: column;
+      }
+
+      .startwithsectiondetails {
+        max-width: 710px;
+
+        @media (max-width: 1024px) {
+          max-width: 100%;
+        }
+
+        h1 {
+          @include font48;
+          color: var(--white);
+          margin-bottom: 16px;
+
+          @media (max-width: 1024px) {
+            @include font40;
+          }
+
+          @media (max-width: 768px) {
+            @include font30;
+          }
+
+          @media (max-width: 576px) {
+            @include font28;
+          }
+        }
+
+        p {
+          @include font18;
+          color: var(--white);
+          margin-bottom: 46px;
+
+          @media (max-width: 576px) {
+            @include font16;
+          }
+        }
+      }
+
+      .startwithimage {
+        max-width: 345px;
+        height: 377px;
+
+        @media (max-width:576px) {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

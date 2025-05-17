@@ -1,0 +1,158 @@
+@use "@/styles/mixin" as *;
+
+.smartinvestmentmain {
+  padding: 100px 20px;
+
+  @media (max-width: 1024px) {
+    padding: 80px 0;
+  }
+
+  @media (max-width: 768px) {
+    padding: 70px 0;
+  }
+
+  @media (max-width: 576px) {
+    padding: 60px 0;
+  }
+
+  .smartinvestmenttitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    h5 {
+      @include font48;
+      color: var(--black2);
+      max-width: 600px;
+
+      span {
+        color: var(--border3);
+      }
+
+      @media (max-width: 1024px) {
+        max-width: 100%;
+        @include font40;
+      }
+
+      @media (max-width: 768px) {
+        @include font30;
+      }
+
+      @media (max-width: 576px) {
+        @include font28;
+      }
+    }
+
+    p {
+      @include font18;
+      color: var(--black2muted);
+      max-width: 600px;
+
+      @media (max-width: 1024px) {
+        max-width: 100%;
+      }
+
+      @media (max-width: 576px) {
+        @include font16;
+      }
+    }
+  }
+
+  .smartinvestmentflx {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+
+    @media (max-width: 1024px) {
+      flex-direction: column-reverse;
+    }
+
+    .smartinvestmentflxleft {
+      max-width: 640px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      @media (max-width: 1024px) {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+      }
+      
+      @media (max-width: 768px) {
+        display: flex;
+      }
+
+      .smartinvestmentbox {
+        padding: 22px 20px;
+        border: 1px solid var(--border1);
+        border-left: 5px solid var(--border5);
+        background-color: var(--lightblue);
+        border-radius: 26px;
+
+        h6 {
+          @include font24;
+          color: var(--black2);
+          margin-bottom: 10px;
+          line-height: 31px;
+
+          @media (max-width: 768px) {
+            @include font22;
+          }
+
+          @media (max-width: 576px) {
+            @include font20;
+          }
+        }
+
+        span {
+          @include font18;
+          font-weight: 500;
+          line-height: 23px;
+          text-transform: uppercase;
+          color: var(--border3);
+        }
+
+        p {
+          @include font18;
+          color: var(--black2muted);
+          line-height: 26px;
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .smartinvestmentflxright {
+      max-width: 840px;
+      height: 550px;
+
+      @media (max-width: 1024px) {
+        margin: 0 auto;
+        max-width: 600px;
+        height: 450px;
+      }
+
+      @media (max-width: 768px) {
+        max-width: 100%;
+        height: 400px;
+      }
+
+      @media (max-width: 576px) {
+        height: auto;
+      }
+
+      img {
+        border-radius: 20px;
+      }
+    }
+  }
+}

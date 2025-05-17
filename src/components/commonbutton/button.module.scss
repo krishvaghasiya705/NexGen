@@ -1,0 +1,146 @@
+@use "@/styles/mixin" as *;
+
+.commonbuttondark {
+  background: var(--themegradientblue);
+  border-radius: 30px;
+  padding: 14px 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--border2);
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+
+  @media (max-width: 1024px) {
+    padding: 10px 20px;
+  }
+
+  span {
+    transition: all 0.4s ease-in-out;
+    color: var(--lightwhite);
+    @include font20;
+
+    @media (max-width: 1024px) {
+      @include font18;
+    }
+    
+    @media (max-width: 576px) {
+      @include font16;
+    }
+  }
+
+  svg {
+    transition: all 0.4s ease-in-out;
+    width: 24px;
+    height: 24px;
+    path {
+      transition: all 0.4s ease-in-out;
+      fill: var(--lightwhite);
+    }
+  }
+
+  &:hover {
+    background: var(--transparent);
+
+    span {
+      color: var(--border2);
+    }
+
+    svg {
+      rotate: 45deg;
+      path {
+        fill: var(--border2);
+      }
+    }
+  }
+}
+.commonbuttonlight {
+  background: var(--white);
+  border-radius: 30px;
+  padding: 14px 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--white);
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+
+  @media (max-width: 1024px) {
+    padding: 10px 20px;
+  }
+
+  span {
+    transition: all 0.4s ease-in-out;
+    color: var(--border2);
+    @include font20;
+
+    @media (max-width: 1024px) {
+      @include font18;
+    }
+    
+    @media (max-width: 576px) {
+      @include font16;
+    }
+  }
+
+  svg {
+    transition: all 0.4s ease-in-out;
+    width: 24px;
+    height: 24px;
+    path {
+      transition: all 0.4s ease-in-out;
+      fill: var(--border2);
+    }
+  }
+
+  &:hover {
+    svg {
+      rotate: 45deg;
+    }
+  }
+}
+.commonbuttonlightsc {
+  background: var(--white);
+  border-radius: 30px;
+  padding: 14px 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--white);
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+
+  @media (max-width: 1024px) {
+    padding: 10px 20px;
+  }
+
+  span {
+    transition: all 0.4s ease-in-out;
+    color: var(--black2);
+    @include font20;
+
+    @media (max-width: 1024px) {
+      @include font18;
+    }
+    
+    @media (max-width: 576px) {
+      @include font16;
+    }
+  }
+
+  svg {
+    transition: all 0.4s ease-in-out;
+    width: 24px;
+    height: 24px;
+    path {
+      transition: all 0.4s ease-in-out;
+      fill: var(--black2);
+    }
+  }
+
+  &:hover {
+    svg {
+      rotate: 45deg;
+    }
+  }
+}

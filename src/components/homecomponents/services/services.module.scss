@@ -1,0 +1,97 @@
+@use "@/styles/mixin" as *;
+
+.servicesmain {
+  margin-bottom: 120px;
+
+  .services {
+    border: 2px solid var(--black5);
+    border-radius: 20px;
+    padding: 20px;
+
+    .servicessectiontitle {
+      background-color: var(--black3);
+      border-radius: 12px;
+      padding: 50px;
+      margin-bottom: 20px;
+
+      h6 {
+        @include font48;
+        color: var(--orange95);
+        text-transform: uppercase;
+      }
+    }
+
+    .servicessectiongrid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+
+      .servicesbox {
+        background-color: var(--black3);
+        border-radius: 14px;
+        padding: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: space-between;
+
+        .servicesboxtopmain {
+          display: flex;
+          justify-content: space-between;
+          gap: 30px;
+          width: 100%;
+
+          .servicestopleft {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+
+            span {
+                @include font30;
+                color: var(--orange95);
+                text-transform: uppercase;
+            }
+            
+            svg {
+                width: 66px;
+                height: 66px;
+            }
+          }
+
+          .bookcalllinkmain {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            img {
+                width: 52px;
+                height: 52px;
+            }
+
+            span {
+                @include font20;
+                text-transform: uppercase;
+                color: var(--gray70)
+            }
+          }
+        }
+
+        .serviceboxbottom {
+          p {
+            @include font18;
+            color: var(--gray70);
+            margin-bottom: 20px;
+          }
+
+          span {
+            display: block;
+            text-align: right;
+            color: var(--orange95);
+            @include font30;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}

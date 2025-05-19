@@ -1,0 +1,230 @@
+@use "@/styles/mixin" as *;
+
+.ourworkmain {
+  margin-bottom: 120px;
+
+  .ourworktitle {
+    padding: 50px;
+    background-color: var(--black3);
+    border-radius: 16px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      @include font48;
+      text-transform: uppercase;
+      color: var(--orange95);
+    }
+
+    .allworklinkmain {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      img {
+        width: 68px;
+        height: 68px;
+      }
+
+      span {
+        @include font20;
+        text-transform: uppercase;
+        color: var(--gray70);
+      }
+    }
+  }
+
+  .ourworkgridmain {
+    border: 2px solid var(--black5);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    .ourworkleftbox {
+      background-color: var(--black3);
+      padding: 60px 40px;
+      border-radius: 14px;
+
+      .ourworkleftboxtitle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+
+        .ourworkappname {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+
+          svg {
+            width: 66px;
+            height: 66px;
+          }
+
+          span {
+            @include font24;
+            color: var(--orange95);
+            text-transform: uppercase;
+          }
+        }
+
+        .detailslinkamin {
+          display: flex;
+          align-items: center;
+          gap: 14px;
+
+          img {
+            width: 52px;
+            height: 52px;
+          }
+
+          span {
+            @include font20;
+            color: var(--gray70);
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      .categorybuttonsmain {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+
+        .categorybutton {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          padding: 10px 16px;
+          background-color: var(--black5);
+          border-radius: 50px;
+          border: none;
+
+          .categoryname {
+            @include font18;
+            color: var(--gray70);
+          }
+
+          .categorydote {
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: var(--orange60);
+          }
+
+          p {
+            @include font18;
+            color: var(--gray90);
+          }
+        }
+      }
+
+      .cardperagraph {
+        @include font18;
+        color: var(--gray70);
+        margin-top: 40px;
+      }
+    }
+
+    .ourworkcenterbox {
+      img {
+        border-radius: 14px;
+      }
+    }
+
+    .ourworkrightbox {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .technologybox {
+        background-color: var(--black3);
+        border-radius: 14px;
+        padding: 40px;
+
+        p {
+          @include font18;
+          color: var(--white);
+          margin-bottom: 20px;
+        }
+
+        .framworkbuttonsmain {
+          display: flex;
+          gap: 10px;
+          align-items: flex-start;
+          flex-wrap: wrap;
+
+          .framworkbutton {
+            background-color: var(--black5);
+            border-radius: 50px;
+            padding: 10px 16px;
+            border: none;
+
+            span {
+              font-family: var(--robotomono);
+              @include font16;
+              color: var(--gray90);
+            }
+          }
+        }
+      }
+
+      .membersdivmain {
+        background-color: var(--black3);
+        border-radius: 14px;
+        padding: 20px 40px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        p {
+          @include font18;
+          color: var(--white);
+          text-transform: uppercase;
+        }
+
+        .memberimages {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          flex-wrap: wrap;
+
+          .memberimage {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--orange80);
+            
+            img {
+              border-radius: 50%;
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      .bookcallbuttonmain {
+          .bookcallbutton {
+            width: 100%;
+            padding: 18px;
+            background-color: var(--orange60);
+            border-radius: 12px;
+            cursor: pointer;
+            border: none;
+
+            span {
+              @include font18;
+              text-transform: uppercase;
+              color: var(--black2);
+            }
+          }
+      }
+    }
+  }
+}

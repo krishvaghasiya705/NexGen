@@ -1,0 +1,44 @@
+@use "@/styles/mixin" as *;
+
+.testimonialmain {
+  margin-bottom: 120px;
+
+  .testimonial {
+    border: 2px solid var(--black5);
+    border-radius: 20px;
+    padding: 20px;
+
+    .testimonialtitle {
+      padding: 50px;
+      background-color: var(--black3);
+      border-radius: 16px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h2 {
+        @include font48;
+        text-transform: uppercase;
+        color: var(--orange95);
+      }
+
+      .testimoniallinkmain {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+          width: 68px;
+          height: 68px;
+        }
+
+        span {
+          @include font20;
+          text-transform: uppercase;
+          color: var(--gray70);
+        }
+      }
+    }
+  }
+}

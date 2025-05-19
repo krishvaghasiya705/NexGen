@@ -1,0 +1,205 @@
+@use "@/styles/mixin" as *;
+
+.herobannermain {
+    margin-bottom: 120px;
+  .herobannerflxmain {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .herobannerleftcontent {
+      max-width: 1207px;
+      width: 100%;
+      background-color: var(--black3);
+      border-radius: 20px;
+      padding: 100px 20px 20px 20px;
+
+      .herobannerleftcontentbox {
+        padding-left: 60px;
+        .herobannerlefttitle {
+          display: flex;
+          margin-bottom: 20px;
+
+          h1 {
+            @include font78;
+            max-width: 704px;
+            text-transform: uppercase;
+            color: var(--orange95);
+          }
+
+          .herobannerlinkmain {
+            display: flex;
+            align-items: center;
+            height: 117px;
+            margin-left: -50px;
+
+            .linkicon {
+              position: relative;
+              width: 77px;
+              height: 77px;
+
+              img {
+                object-fit: scale-down;
+              }
+
+              .linkarrowmain {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                .linkarrow {
+                  width: 52px;
+                  height: 52px;
+                  background-color: var(--orange60);
+                  border-radius: 50%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+
+                  svg {
+                    width: 24px;
+                    height: 24px;
+                  }
+                }
+              }
+            }
+
+            span {
+              @include font24;
+              color: var(--orange60);
+              text-transform: uppercase;
+            }
+          }
+        }
+
+        p {
+          @include font18;
+          font-weight: 400;
+          color: var(--gray40);
+          max-width: 927px;
+          margin-bottom: 90px;
+        }
+      }
+    }
+
+    .herobannerrightcontent {
+      max-width: 593px;
+      width: 100%;
+      background-color: var(--black5);
+      border-radius: 20px;
+      overflow: hidden;
+
+      .herobannerimagediv {
+        position: relative;
+
+        .arrowlinkmain {
+          position: absolute;
+          top: -20px;
+          right: -38px;
+          // padding: 20px 20px 22px 22px;
+          background-color: var(--black2);
+          border-radius: 50%;
+          width: 191px;
+          height: 191px;
+
+          // .linkicon {
+          //     position: relative;
+          //     height: 100%;
+
+          //     svg {
+          //         width: 100%;
+          //         height: 100%;
+          //     }
+
+          //     .linkarrowmain {
+          //         position: absolute;
+          //         top: 50%;
+          //         left: 50%;
+          //         transform: translate(-50%, -50%);
+          //     }
+          // }
+        }
+
+        .herobannerimage {
+          height: 465px;
+        }
+      }
+
+      .rightcontentbottombox {
+        padding: 30px;
+
+        h2 {
+          @include font24;
+          color: var(--orange95);
+          text-transform: uppercase;
+        }
+
+        p {
+          @include font18;
+          font-weight: 400;
+          color: var(--gray70);
+        }
+      }
+    }
+  }
+
+  .herobannerrcountingsectionmain {
+    margin-top: 20px;
+    border: 2px solid var(--black5);
+    border-radius: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+
+    .coutingboxmain {
+      background-color: var(--black3);
+      padding: 30px 20px;
+      border-radius: 14px;
+
+      span {
+        @include font18;
+        text-transform: uppercase;
+        color: var(--gray70);
+        text-align: center;
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+        h3 {
+            @include font60;
+            text-transform: uppercase;
+            color: var(--orange70);
+            text-align: center;
+        }
+    }
+
+    .knowmorebox {
+        background-color: var(--black3);
+        padding: 30px 20px;
+        border-radius: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .knowmorelinkmain {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            img {
+                width: 68px;
+                height: 68px;
+            }
+
+            span {
+                @include font20;
+                text-transform: uppercase;
+                color: var(--gray70);
+                text-transform: uppercase;
+            }
+        }
+    }
+  }
+}

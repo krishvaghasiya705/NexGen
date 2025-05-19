@@ -1,0 +1,28 @@
+@use "@/styles/mixin" as *;
+
+.commonmarqueemain {
+    background-color: var(--black2);
+    padding: 20px 0;
+    border-radius: 12px;
+    height: 70px;
+
+    .commonmarqueeflx {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-left: 20px;
+
+        span {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: var(--orange60)
+        }
+
+        p {
+            @include font20;
+            color: var(--gray40);
+            text-transform: uppercase;
+        }
+    }
+}

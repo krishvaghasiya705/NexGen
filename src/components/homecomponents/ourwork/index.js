@@ -25,11 +25,11 @@ export default function Ourwork() {
           <h1>Our Works</h1>
           <Link href={"/"} className={styles.allworklinkmain}>
             <Image
-                    src={arrowcircleimage}
-                    alt="arrowcircleimage"
-                    width={1000}
-                    heigth={1000}
-                  />
+              src={arrowcircleimage}
+              alt="arrowcircleimage"
+              width={1000}
+              heigth={1000}
+            />
             <span>ALL Works</span>
           </Link>
         </div>
@@ -80,19 +80,19 @@ export default function Ourwork() {
               <p>Technologies Used</p>
               <div className={styles.framworkbuttonsmain}>
                 <button type="button" className={styles.framworkbutton}>
-                  <span>React Native</span>
+                  React Native
                 </button>
                 <button type="button" className={styles.framworkbutton}>
-                  <span>Firebase</span>
+                  Firebase
                 </button>
                 <button type="button" className={styles.framworkbutton}>
-                  <span>Redux</span>
+                  Redux
                 </button>
                 <button type="button" className={styles.framworkbutton}>
-                  <span>REST API</span>
+                  REST API
                 </button>
                 <button type="button" className={styles.framworkbutton}>
-                  <span>MongoDB</span>
+                  MongoDB
                 </button>
               </div>
             </div>
@@ -195,19 +195,19 @@ export default function Ourwork() {
               <p>Technologies Used</p>
               <div className={styles.framworkbuttonsmain}>
                 <button type="button" className={styles.framworkbutton}>
-                  <span>WordPress</span>
+                  WordPress
                 </button>
                 <button type="button" className={styles.framworkbutton}>
-                  <span>PHP</span>
+                  PHP
                 </button>
                 <button type="button" className={styles.framworkbutton}>
-                  <span>HTML5</span>
+                  HTML5
                 </button>
                 <button type="button" className={styles.framworkbutton}>
-                  <span>CSS3</span>
+                  CSS3
                 </button>
                 <button type="button" className={styles.framworkbutton}>
-                  <span>JavaScript</span>
+                  JavaScript
                 </button>
               </div>
             </div>

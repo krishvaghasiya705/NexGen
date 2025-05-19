@@ -276,6 +276,7 @@
     .ourworkrightbox {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       gap: 20px;
 
       .technologybox {
@@ -308,12 +309,9 @@
             border-radius: 50px;
             padding: 10px 16px;
             border: none;
-
-            span {
-              font-family: var(--robotomono);
-              @include font16;
-              color: var(--gray90);
-            }
+            font-family: var(--robotomono);
+            @include font16;
+            color: var(--gray90);
           }
         }
       }

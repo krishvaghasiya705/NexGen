@@ -1,3 +1,4 @@
+import Faq from "@/components/homecomponents/faq";
 import Herobanner from "@/components/homecomponents/herobanner";
 import Ourwork from "@/components/homecomponents/ourwork";
 import Reasonsection from "@/components/homecomponents/reason";
@@ -12,6 +13,7 @@ export default function Home() {
       <Services />
       <Ourwork />
       <Testimonial />
+      <Faq />
     </>
   );
 }

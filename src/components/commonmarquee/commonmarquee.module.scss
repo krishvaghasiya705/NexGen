@@ -6,6 +6,10 @@
     border-radius: 12px;
     height: 70px;
 
+    &.commonmarqueebgblack3 {
+        background-color: var(--black3);
+    }
+
     .commonmarqueeflx {
         display: flex;
         align-items: center;

@@ -40,5 +40,75 @@
         }
       }
     }
+
+    .testimonialgridmain {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+
+      .tetimonialbox {
+        background-color: var(--black3);
+        border-radius: 16px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        .testimonialtopbox {
+          padding: 40px;
+
+          h3 {
+            @include font24;
+            text-transform: uppercase;
+            color: var(--orange95);
+            margin-bottom: 24px;
+          }
+
+          p {
+            @include font18;
+            color: var(--gray70);
+          }
+        }
+
+        .testimonialnamesboxmain {
+          padding: 30px 40px;
+          background-color: var(--black5);
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .testimonialnamesflx {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            img {
+              width: 60px;
+              height: 60px;
+              border-radius: 50%;
+              background-color: var(--orange60);
+            }
+
+            p {
+              @include font20;
+              color: var(--orange90);
+            }
+
+            span {
+              @include font18;
+              color: var(--gray50);
+            }
+          }
+
+          .arrowicon {
+            width: 52px;
+            height: 52px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
   }
 }

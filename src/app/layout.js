@@ -1,6 +1,7 @@
 import "./globals.scss";
-import "../styles/main.scss"
+import "../styles/main.scss";
 import Header from "@/common/header";
+import Footer from "@/common/footer";
 
 export const metadata = {
   title: "Create Next App",
@@ -15,12 +16,16 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
           rel="stylesheet"
         />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body>
         <Header />
         {children}
-        </body>
+        <Footer />
+      </body>
     </html>
   );
 }

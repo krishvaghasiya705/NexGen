@@ -9,7 +9,6 @@
 
     .herobannerleftcontent {
       max-width: 1207px;
-      width: 100%;
       background-color: var(--black3);
       border-radius: 20px;
       padding: 100px 20px 20px 20px;
@@ -88,9 +87,9 @@
       width: 100%;
       background-color: var(--black5);
       border-radius: 20px;
-      overflow: hidden;
-
+      
       .herobannerimagediv {
+        overflow: hidden;
         position: relative;
 
         .arrowlinkmain {
@@ -123,6 +122,7 @@
 
         .herobannerimage {
           height: 465px;
+          border-radius: 20px 20px 0 0;
         }
       }
 

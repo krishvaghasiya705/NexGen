@@ -3,6 +3,10 @@
 .testimonialmain {
   margin-bottom: 120px;
 
+  @media (max-width: 1024px) {
+    margin-bottom: 60px;
+  }
+
   .testimonial {
     border: 2px solid var(--black5);
     border-radius: 20px;
@@ -17,10 +21,42 @@
       justify-content: space-between;
       align-items: center;
 
+      @media (max-width:1024px) {
+        padding: 40px;
+      }
+        
+      @media (max-width:768px) {
+        padding: 30px;
+      }
+        
+      @media (max-width:576px) {
+        padding: 20px;
+      }
+    
+    @media (max-width:576px) {
+      padding: 20px;
+      margin-bottom: 10px;
+      flex-direction: column;
+      gap: 10px;
+        align-items: flex-start;
+      }
+
       h2 {
         @include font48;
         text-transform: uppercase;
         color: var(--orange95);
+
+        @media (max-width: 1024px) {
+        @include font38;
+      }
+
+      @media (max-width: 768px) {
+        @include font30;
+      }
+
+      @media (max-width: 576px) {
+        @include font28;
+      }
       }
 
       .testimoniallinkmain {
@@ -31,12 +67,25 @@
         img {
           width: 68px;
           height: 68px;
+
+          @media (max-width:768px) {
+          width: 50px;
+          height: 50px;
+        }
         }
 
         span {
           @include font20;
           text-transform: uppercase;
           color: var(--gray70);
+
+          @media (max-width:768px) {
+          @include font18;
+        }
+
+        @media (max-width:576px) {
+          @include font16;
+        }
         }
       }
     }
@@ -45,6 +94,14 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
+
+      @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
 
       .tetimonialbox {
         background-color: var(--black3);
@@ -58,16 +115,36 @@
         .testimonialtopbox {
           padding: 40px;
 
+          @media (max-width:768px) {
+            padding: 30px;
+          }
+
+          @media (max-width:576px) {
+            padding: 20px;
+          }
+
           h3 {
             @include font24;
             text-transform: uppercase;
             color: var(--orange95);
             margin-bottom: 24px;
+
+            @media (max-width:1024px) {
+              @include font22;
+            }
+
+            @media (max-width:768px) {
+              @include font20;
+            }
           }
 
           p {
             @include font18;
             color: var(--gray70);
+
+            @media (max-width:576px) {
+              @include font16;
+            }
           }
         }
 
@@ -79,6 +156,14 @@
           justify-content: space-between;
           align-items: center;
 
+          @media (max-width: 768px) {
+            padding: 20px 30px;
+          }
+
+          @media (max-width: 576px) {
+            padding: 20px;
+          }
+
           .testimonialnamesflx {
             display: flex;
             align-items: center;
@@ -89,16 +174,42 @@
               height: 60px;
               border-radius: 50%;
               background-color: var(--orange60);
+
+              @media (max-width: 768px) {
+                width: 50px;
+                height: 50px;
+              }
+
+              @media (max-width: 576px) {
+                width: 40px;
+                height: 40px;
+              }
             }
 
             p {
               @include font20;
               color: var(--orange90);
+
+              @media (max-width:768px) {
+                @include font18;
+              }
+
+              @media (max-width:576px) {
+                @include font16;
+              }
             }
 
             span {
               @include font18;
               color: var(--gray50);
+
+              @media (max-width:768px) {
+                @include font16;
+              }
+
+              @media (max-width:768px) {
+                @include font15;
+              }
             }
           }
 
@@ -106,6 +217,16 @@
             width: 52px;
             height: 52px;
             cursor: pointer;
+
+            @media (max-width:768px) {
+              width: 42px;
+              height: 42px;
+            }
+
+            @media (max-width:576px) {
+              width: 32px;
+              height: 32px;
+            }
           }
         }
       }

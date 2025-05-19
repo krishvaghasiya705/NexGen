@@ -3,6 +3,10 @@
 .faqmain {
   margin-bottom: 120px;
 
+  @media (max-width: 1024px) {
+    margin-bottom: 60px;
+  }
+
   .faqtitle {
     padding: 50px;
     background-color: var(--black3);
@@ -12,10 +16,38 @@
     justify-content: space-between;
     align-items: center;
 
+    @media (max-width: 1024px) {
+      padding: 40px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 30px;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    @media (max-width: 576px) {
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+
     h4 {
       @include font48;
       text-transform: uppercase;
       color: var(--orange95);
+
+      @media (max-width: 1024px) {
+        @include font38;
+      }
+
+      @media (max-width: 768px) {
+        @include font30;
+      }
+
+      @media (max-width: 576px) {
+        @include font28;
+      }
     }
 
     .faqtitleinkmain {
@@ -26,12 +58,25 @@
       img {
         width: 68px;
         height: 68px;
+
+        @media (max-width: 768px) {
+          width: 50px;
+          height: 50px;
+        }
       }
 
       span {
         @include font20;
         text-transform: uppercase;
         color: var(--gray70);
+
+        @media (max-width: 768px) {
+          @include font18;
+        }
+
+        @media (max-width: 576px) {
+          @include font16;
+        }
       }
     }
   }
@@ -39,6 +84,10 @@
   .faqsectionflxmain {
     display: flex;
     gap: 20px;
+
+    @media (max-width: 1024px) {
+      flex-direction: column-reverse;
+    }
 
     .faqsectionflxleft {
       width: 100%;
@@ -53,14 +102,47 @@
         padding: 40px 60px;
         border-radius: 16px;
 
+        @media (max-width: 1024px) {
+          padding: 30px 50px;
+        }
+
+        @media (max-width: 768px) {
+          padding: 20px 30px;
+        }
+
+        @media (max-width: 576px) {
+          padding: 20px;
+        }
+
         &.faqboxmainactive {
-          padding: 60px !important;
+          padding: 60px;
+
+          @media (max-width: 1024px) {
+            padding: 50px;
+          }
+
+          @media (max-width: 768px) {
+            padding: 30px;
+          }
+
+          @media (max-width: 576px) {
+            padding: 20px;
+          }
 
           .faqboxdetails {
             max-height: 1000px;
             padding-top: 30px;
             margin-top: 4px;
             border-top: 1px solid var(--black6);
+            transition: max-height 0.4s ease;
+
+            @media (max-width: 768px) {
+              margin-top: 10px;
+            }
+
+            @media (max-width: 576px) {
+              padding: 20px 0;
+            }
           }
         }
 
@@ -74,6 +156,14 @@
           p {
             @include font22;
             color: var(--orange95);
+
+            @media (max-width: 1024px) {
+              @include font20;
+            }
+
+            @media (max-width: 576px) {
+              @include font18;
+            }
           }
 
           .faqboxtitleicon {
@@ -89,11 +179,15 @@
           border-top: none;
           padding-top: 0;
           margin-top: 0;
-          transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+          transition: max-height 0.4s ease;
 
           p {
             @include font18;
             color: var(--gray70);
+
+            @media (max-width: 576px) {
+              @include font16;
+            }
           }
         }
       }
@@ -107,12 +201,42 @@
       height: -webkit-fill-available;
       border-radius: 14px;
 
+      @media (max-width: 1024px) {
+        max-width: 100%;
+        padding: 40px;
+      }
+
+      @media (max-width: 768px) {
+        padding: 30px;
+      }
+
+      @media (max-width: 576px) {
+        padding: 20px;
+      }
+
       h5 {
         @include font24;
         color: var(--orange95);
         padding-bottom: 50px;
         margin-bottom: 50px;
         border-bottom: 1px solid var(--black6);
+
+        @media (max-width: 1024px) {
+          padding-bottom: 40px;
+          margin-bottom: 40px;
+        }
+
+        @media (max-width: 768px) {
+          @include font22;
+          padding-bottom: 30px;
+          margin-bottom: 30px;
+        }
+
+        @media (max-width: 576px) {
+          @include font20;
+          padding-bottom: 20px;
+          margin-bottom: 20px;
+        }
       }
 
       .faqformmain {
@@ -127,6 +251,10 @@
             text-transform: uppercase;
             display: block;
             margin-bottom: 10px;
+
+            @media (max-width: 576px) {
+              @include font16;
+            }
           }
 
           input {
@@ -137,6 +265,15 @@
             width: 100%;
             @include font18;
             color: var(--gray40);
+
+            @media (max-width: 768px) {
+              padding: 20px 24px;
+            }
+
+            @media (max-width: 576px) {
+              @include font16;
+              padding: 15px 20px;
+            }
           }
 
           textarea {
@@ -149,6 +286,15 @@
             @include font18;
             color: var(--gray40);
             resize: none;
+
+           @media (max-width: 768px) {
+              padding: 20px 24px;
+            }
+
+            @media (max-width: 576px) {
+              @include font16;
+              padding: 15px 20px;
+            }
           }
         }
       }
@@ -160,11 +306,25 @@
         border-radius: 12px;
         padding: 18px 24px;
         margin-top: 50px;
+        
+        @media (max-width:768px) {
+          margin-top: 40px;
+        }
+        
+        @media (max-width:576px) {
+          padding: 15px 20px;
+          margin-top: 30px;
+        }
 
         span {
           @include font18;
           color: var(--black2);
           text-transform: uppercase;
+
+          @media (max-width:576px) {
+            @include font16;
+            font-weight: 500;
+          }
         }
       }
     }

@@ -80,11 +80,6 @@ export default function Faq() {
                 </div>
                 <div
                   className={styles.faqboxdetails}
-                  style={{
-                    maxHeight: openIndex === idx ? "1000px" : "0",
-                    transition:
-                      "max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1)",
-                  }}
                 >
                   {faq.answer && <p>{faq.answer}</p>}
                 </div>

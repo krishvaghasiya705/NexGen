@@ -1,59 +1,119 @@
+@mixin font14 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+@mixin font15 {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
 @mixin font16 {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 @mixin font18 {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 27px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
 }
 
 @mixin font20 {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 @mixin font22 {
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 26px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26px;
 }
 
 @mixin font24 {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 36px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+@mixin font25 {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+@mixin font26 {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 34px;
+}
+
+@mixin font28 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 40px;
 }
 
 @mixin font30 {
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 45px;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+@mixin font35 {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 49px;
+}
+
+@mixin font38 {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 43px;
+}
+
+@mixin font40 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+}
+
+@mixin font45 {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 50px;
 }
 
 @mixin font48 {
-    font-size: 48px;
-    font-weight: 600;
-    line-height: 56px;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56px;
+}
+
+@mixin font50 {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 70px;
 }
 
 @mixin font58 {
-    font-size: 58px;
-    font-weight: 500;
-    line-height: 87px;
+  font-size: 58px;
+  font-weight: 500;
+  line-height: 87px;
 }
 
 @mixin font60 {
-    font-size: 60px;
-    font-weight: 600;
-    line-height: 43px;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 43px;
 }
 
 @mixin font78 {
-    font-size: 78px;
-    font-weight: 600;
-    line-height: 117px;
+  font-size: 78px;
+  font-weight: 600;
+  line-height: 117px;
 }

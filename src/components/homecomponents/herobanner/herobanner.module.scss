@@ -1,11 +1,20 @@
 @use "@/styles/mixin" as *;
 
 .herobannermain {
-    margin-bottom: 120px;
+  margin-bottom: 120px;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 60px;
+  }
+
   .herobannerflxmain {
     display: flex;
     align-items: center;
     gap: 20px;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
 
     .herobannerleftcontent {
       max-width: 1207px;
@@ -13,17 +22,57 @@
       border-radius: 20px;
       padding: 100px 20px 20px 20px;
 
+      @media (max-width: 1024px) {
+        max-width: 100%;
+        padding: 50px 20px 20px 20px;
+      }
+
+      @media (max-width: 768px) {
+        padding: 20px;
+      }
+
       .herobannerleftcontentbox {
         padding-left: 60px;
+
+        @media (max-width: 1024px) {
+          padding-left: 30px;
+        }
+
+        @media (max-width: 768px) {
+          padding-left: 0;
+        }
+
         .herobannerlefttitle {
           display: flex;
           margin-bottom: 20px;
+
+          @media (max-width: 1024px) {
+            gap: 20px;
+            flex-direction: column;
+          }
+
+          @media (max-width: 576px) {
+            gap: 15px;
+          }
 
           h1 {
             @include font78;
             max-width: 704px;
             text-transform: uppercase;
             color: var(--orange95);
+
+            @media (max-width: 1024px) {
+              @include font60;
+              line-height: 100px;
+            }
+
+            @media (max-width: 768px) {
+              @include font50;
+            }
+
+            @media (max-width: 576px) {
+              @include font40;
+            }
           }
 
           .herobannerlinkmain {
@@ -32,10 +81,31 @@
             height: 117px;
             margin-left: -50px;
 
+            @media (max-width: 1024px) {
+              margin-left: 0;
+              gap: 10px;
+              height: auto;
+            }
+
             .linkicon {
               position: relative;
               width: 77px;
               height: 77px;
+
+              @media (max-width:1024px) {
+                width: 60px;
+                height: 60px;
+              }
+
+              @media (max-width:768px) {
+                width: 50px;
+                height: 50px;
+              }
+
+              @media (max-width:576px) {
+                width: 40px;
+                height: 40px;
+              }
 
               img {
                 object-fit: scale-down;
@@ -56,9 +126,29 @@
                   justify-content: center;
                   align-items: center;
 
+                  @media (max-width:1024px) {
+                    width: 42px;
+                    height: 42px;
+                  }
+
+                  @media (max-width:768px) {
+                    width: 32px;
+                    height: 32px;
+                  }
+
+                  @media (max-width:576px) {
+                    width: 22px;
+                    height: 22px;
+                  }
+
                   svg {
                     width: 24px;
                     height: 24px;
+
+                    @media (max-width:1024px) {
+                      width: 20px;
+                      height: 20px;
+                    }
                   }
                 }
               }
@@ -78,6 +168,10 @@
           color: var(--gray40);
           max-width: 927px;
           margin-bottom: 90px;
+
+          @media (max-width: 1024px) {
+            margin-bottom: 40px;
+          }
         }
       }
     }
@@ -87,7 +181,11 @@
       width: 100%;
       background-color: var(--black5);
       border-radius: 20px;
-      
+
+      @media (max-width: 1024px) {
+        max-width: 100%;
+      }
+
       .herobannerimagediv {
         overflow: hidden;
         position: relative;
@@ -101,6 +199,23 @@
           border-radius: 50%;
           width: 191px;
           height: 191px;
+          
+          @media (max-width:1024px) {
+            width: 181px;
+            height: 181px;
+          }
+          
+          @media (max-width:768px) {
+            width: 150px;
+            height: 150px;
+          }
+
+          @media (max-width:576px) {
+          top: -10px;
+          right: -22px;
+            width: 100px;
+            height: 100px;
+          }
 
           // .linkicon {
           //     position: relative;
@@ -123,11 +238,23 @@
         .herobannerimage {
           height: 465px;
           border-radius: 20px 20px 0 0;
+
+          @media (max-width:768px) {
+            height: 350px;
+          }
+
+          @media (max-width:576px) {
+            height: 300px;
+          }
         }
       }
 
       .rightcontentbottombox {
         padding: 30px;
+
+        @media (max-width: 768px) {
+          padding: 20px;
+        }        
 
         h2 {
           @include font24;
@@ -152,11 +279,23 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
+    
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    @media (max-width: 576px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
 
     .coutingboxmain {
       background-color: var(--black3);
       padding: 30px 20px;
       border-radius: 14px;
+
+      @media (max-width:768px) {
+        padding: 20px 15px;
+      }
 
       span {
         @include font18;
@@ -165,41 +304,63 @@
         text-align: center;
         display: block;
         margin-bottom: 20px;
-    }
-    
-        h3 {
-            @include font60;
-            text-transform: uppercase;
-            color: var(--orange70);
-            text-align: center;
+
+        @media (max-width:768px) {
+          @include font16;
+          margin-bottom: 15px;
         }
+      }
+
+      h3 {
+        @include font60;
+        text-transform: uppercase;
+        color: var(--orange70);
+        text-align: center;
+
+        @media (max-width:1024px) {
+          @include font50;
+        }
+
+        @media (max-width:768px) {
+          @include font45;
+        }
+      }
     }
 
     .knowmorebox {
-        background-color: var(--black3);
-        padding: 30px 20px;
-        border-radius: 14px;
+      background-color: var(--black3);
+      padding: 30px 20px;
+      border-radius: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .knowmorelinkmain {
         display: flex;
-        justify-content: center;
         align-items: center;
+        gap: 10px;
 
-        .knowmorelinkmain {
-            display: flex;
-            align-items: center;
-            gap: 10px;
+        img {
+          width: 68px;
+          height: 68px;
 
-            img {
-                width: 68px;
-                height: 68px;
-            }
-
-            span {
-                @include font20;
-                text-transform: uppercase;
-                color: var(--gray70);
-                text-transform: uppercase;
-            }
+          @media (max-width:768px) {
+            width: 50px;
+            height: 50px;
+          }
         }
+
+        span {
+          @include font20;
+          text-transform: uppercase;
+          color: var(--gray70);
+          text-transform: uppercase;
+
+          @media (max-height: 1024px) {
+            @include font18;
+          }
+        }
+      }
     }
   }
 }

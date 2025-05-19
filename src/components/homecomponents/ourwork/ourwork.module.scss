@@ -3,6 +3,10 @@
 .ourworkmain {
   margin-bottom: 120px;
 
+  @media (max-width: 1024px) {
+    margin-bottom: 60px;
+  }
+
   .ourworktitle {
     padding: 50px;
     background-color: var(--black3);
@@ -11,11 +15,39 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    @media (max-width:1024px) {
+      padding: 40px;
+    }
+    
+    @media (max-width:768px) {
+      padding: 30px;
+    }
+    
+    @media (max-width:576px) {
+      padding: 20px;
+      margin-bottom: 10px;
+      flex-direction: column;
+      gap: 10px;
+        align-items: flex-start;
+      }
 
     h1 {
       @include font48;
       text-transform: uppercase;
       color: var(--orange95);
+      
+      @media (max-width: 1024px) {
+        @include font38;
+      }
+
+      @media (max-width: 768px) {
+        @include font30;
+      }
+
+      @media (max-width: 576px) {
+        @include font28;
+      }
     }
 
     .allworklinkmain {
@@ -26,12 +58,25 @@
       img {
         width: 68px;
         height: 68px;
+
+        @media (max-width:768px) {
+          width: 50px;
+          height: 50px;
+        }
       }
 
       span {
         @include font20;
         text-transform: uppercase;
         color: var(--gray70);
+
+        @media (max-width:768px) {
+          @include font18;
+        }
+
+        @media (max-width:576px) {
+          @include font16;
+        }
       }
     }
   }
@@ -44,17 +89,39 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
 
     .ourworkleftbox {
       background-color: var(--black3);
       padding: 60px 40px;
       border-radius: 14px;
 
+      @media (max-width: 1024px) {
+        padding: 40px 20px;
+      }
+
+      @media (max-width: 768px) {
+        padding: 30px 20px;
+      }
+
+      @media (max-width: 576px) {
+        padding: 20px;
+      }
+
       .ourworkleftboxtitle {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 40px;
+
+        @media (max-width:768px) {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+        }
 
         .ourworkappname {
           display: flex;
@@ -64,12 +131,30 @@
           svg {
             width: 66px;
             height: 66px;
+
+            @media (max-width:768px) {
+              width: 56px;
+              height: 56px;
+            }
+
+            @media (max-width:576px) {
+              width: 50px;
+              height: 50px;
+            }
           }
 
           span {
             @include font24;
             color: var(--orange95);
             text-transform: uppercase;
+
+            @media (max-width:768px) {
+              @include font20;
+            }
+
+            @media (max-width:576px) {
+              @include font18;
+            }
           }
         }
 
@@ -81,6 +166,16 @@
           img {
             width: 52px;
             height: 52px;
+
+            @media (max-width:768px) {
+              width: 42px;
+              height: 42px;
+            }
+
+            @media (max-width:576px) {
+              width: 36px;
+              height: 36px;
+            }
           }
 
           span {
@@ -109,6 +204,14 @@
           .categoryname {
             @include font18;
             color: var(--gray70);
+
+            @media (max-width: 768px) {
+              @include font16;
+            }
+
+            @media (max-width: 576px) {
+              @include font14;
+            }
           }
 
           .categorydote {
@@ -121,6 +224,14 @@
           p {
             @include font18;
             color: var(--gray90);
+          
+            @media (max-width: 768px) {
+              @include font16;
+            }
+          
+            @media (max-width: 576px) {
+              @include font14;
+            }
           }
         }
       }
@@ -129,12 +240,36 @@
         @include font18;
         color: var(--gray70);
         margin-top: 40px;
+        
+        @media (max-width:1024px) {
+          margin-top: 30px;
+        }
+        
+        @media (max-width:768px) {
+          margin-top: 20px;
+        }
+        
+        @media (max-width:576px) {
+          @include font16;
+        }
       }
     }
 
     .ourworkcenterbox {
       img {
         border-radius: 14px;
+
+        @media (max-width:1024px) {
+          height: 400px;
+        }
+
+        @media (max-width:768px) {
+          height: 350px;
+        }
+
+        @media (max-width:576px) {
+          height: 300px;
+        }
       }
     }
 
@@ -147,6 +282,14 @@
         background-color: var(--black3);
         border-radius: 14px;
         padding: 40px;
+
+        @media (max-width: 768px) {
+          padding: 30px;
+        }
+
+        @media (max-width: 576px) {
+          padding: 20px;
+        }
 
         p {
           @include font18;
@@ -183,10 +326,25 @@
         align-items: center;
         gap: 40px;
 
+        @media (max-width:768px) {
+          gap: 30px;
+          padding: 20px 30px;
+        }
+        
+        @media (max-width:576px) {
+          gap: 20px;
+          padding: 20px;
+          flex-direction: column;
+        }
+
         p {
           @include font18;
           color: var(--white);
           text-transform: uppercase;
+
+          @media (max-width:576px) {
+            @include font16;
+          }
         }
 
         .memberimages {
@@ -194,6 +352,7 @@
           align-items: center;
           gap: 10px;
           flex-wrap: wrap;
+          justify-content: center;
 
           .memberimage {
             width: 50px;
@@ -217,11 +376,19 @@
             border-radius: 12px;
             cursor: pointer;
             border: none;
+            
+            @media (max-width: 576px) {
+              padding: 15px;
+            }
 
             span {
               @include font18;
               text-transform: uppercase;
               color: var(--black2);
+
+              @media (max-width: 576px) {
+                @include font16;
+              }
             }
           }
       }

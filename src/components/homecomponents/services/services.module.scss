@@ -3,6 +3,10 @@
 .servicesmain {
   margin-bottom: 120px;
 
+  @media (max-width: 1024px) {
+    margin-bottom: 60px;
+  }
+
   .services {
     border: 2px solid var(--black5);
     border-radius: 20px;
@@ -14,10 +18,34 @@
       padding: 50px;
       margin-bottom: 20px;
 
+      @media (max-width: 1024px) {
+        padding: 40px;
+      }
+
+      @media (max-width: 768px) {
+        padding: 30px;
+      }
+
+      @media (max-width: 576px) {
+        padding: 20px;
+      }
+
       h6 {
         @include font48;
         color: var(--orange95);
         text-transform: uppercase;
+
+        @media (max-width: 1024px) {
+          @include font38;
+        }
+
+        @media (max-width: 768px) {
+          @include font30;
+        }
+
+        @media (max-width: 576px) {
+          @include font28;
+        }
       }
     }
 
@@ -25,6 +53,10 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
+
+      @media (max-width: 1024px) {
+        grid-template-columns: 1fr;
+      }
 
       .servicesbox {
         background-color: var(--black3);
@@ -34,6 +66,21 @@
         flex-direction: column;
         gap: 50px;
         justify-content: space-between;
+        
+        @media (max-width: 1024px) {
+          gap: 40px;
+          padding: 40px;
+        }
+        
+        @media (max-width: 768px) {
+          gap: 30px;
+          padding: 30px;
+        }
+        
+        @media (max-width: 576px) {
+          gap: 20px;
+          padding: 20px;
+        }
 
         .servicesboxtopmain {
           display: flex;
@@ -41,20 +88,48 @@
           gap: 30px;
           width: 100%;
 
+          @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+          }
+
+          @media (max-width: 576px) {
+            gap: 15px;
+          }
+
           .servicestopleft {
             display: flex;
             align-items: center;
             gap: 14px;
 
             span {
-                @include font30;
-                color: var(--orange95);
-                text-transform: uppercase;
+              @include font30;
+              color: var(--orange95);
+              text-transform: uppercase;
+
+              @media (max-width: 768px) {
+                @include font28;
+              }
+
+              @media (max-width: 576px) {
+                @include font20;
+              }
             }
-            
+
             svg {
-                width: 66px;
-                height: 66px;
+              width: 66px;
+              height: 66px;
+
+              @media (max-width: 768px) {
+                width: 55px;
+                height: 55px;
+              }
+
+              @media (max-width: 576px) {
+                width: 50px;
+                height: 50px;
+              }
             }
           }
 
@@ -64,14 +139,32 @@
             gap: 10px;
 
             img {
-                width: 52px;
-                height: 52px;
+              width: 52px;
+              height: 52px;
+
+              @media (max-width: 768px) {
+                width: 50px;
+                height: 50px;
+              }
+
+              @media (max-width: 576px) {
+                width: 45px;
+                height: 45px;
+              }
             }
 
             span {
-                @include font20;
-                text-transform: uppercase;
-                color: var(--gray70)
+              @include font20;
+              text-transform: uppercase;
+              color: var(--gray70);
+
+              @media (max-width: 768px) {
+                @include font18;
+              }
+
+              @media (max-width: 576px) {
+                @include font16;
+              }
             }
           }
         }
@@ -81,6 +174,10 @@
             @include font18;
             color: var(--gray70);
             margin-bottom: 20px;
+
+            @media (max-width: 576px) {
+              @include font16;
+            }
           }
 
           span {
@@ -89,6 +186,14 @@
             color: var(--orange95);
             @include font30;
             text-transform: uppercase;
+
+            @media (max-width: 768px) {
+              @include font24;
+            }
+
+            @media (max-width: 576px) {
+              @include font20;
+            }
           }
         }
       }

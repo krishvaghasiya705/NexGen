@@ -1,68 +1,145 @@
 @use "@/styles/mixin" as *;
 
 .reasonsectionmain {
-    margin-bottom: 120px;
+  margin-bottom: 120px;
 
-    .reasonsection {
-        border: 2px solid var(--black5);
-        border-radius: 20px;
+  @media (max-width: 1024px) {
+    margin-bottom: 60px;
+  }
+
+  .reasonsection {
+    border: 2px solid var(--black5);
+    border-radius: 20px;
+    padding: 20px;
+
+    .reasonsectiontitle {
+      background-color: var(--black3);
+      border-radius: 12px;
+      padding: 50px;
+      margin-bottom: 20px;
+
+      @media (max-width: 1024px) {
+        padding: 40px;
+      }
+
+      @media (max-width: 768px) {
+        padding: 30px;
+      }
+
+      @media (max-width: 576px) {
         padding: 20px;
-        
-        .reasonsectiontitle {
-            background-color: var(--black3);
-            border-radius: 12px;
-            padding: 50px;
-            margin-bottom: 20px;
+      }
 
-            h4 {
-                @include font48;
-                color: var(--orange95);
-                text-transform: uppercase;
-            }
+      h4 {
+        @include font48;
+        color: var(--orange95);
+        text-transform: uppercase;
+
+        @media (max-width: 1024px) {
+          @include font38;
         }
 
-        .reasonboxgridmain {
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            gap: 20px;
-
-            .reasonbox {
-                background-color: var(--black3);
-                border-radius: 14px;
-                padding: 40px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                gap: 40px;
-
-                h5 {
-                    @include font30;
-                    text-transform: uppercase;
-                    color: var(--orange95);
-                    margin-bottom: 12px;
-                }
-
-                p {
-                    @include font18;
-                    color: var(--gray70);
-                }
-
-                .learnmorelink {
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-
-                    img {
-                        width: 68px;
-                        height: 68px;
-                    }
-
-                    span {
-                        @include font18;
-                        color: var(--gray70);
-                    }
-                }
-            }
+        @media (max-width: 768px) {
+          @include font30;
         }
+
+        @media (max-width: 576px) {
+          @include font28;
+        }
+      }
     }
+
+    .reasonboxgridmain {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+
+      @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+
+      .reasonbox {
+        background-color: var(--black3);
+        border-radius: 14px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+
+        @media (max-width: 768px) {
+          padding: 30px;
+          gap: 30px;
+        }
+        
+        @media (max-width: 576px) {
+          padding: 20px;
+          gap: 20px;
+        }
+
+        h5 {
+          @include font30;
+          text-transform: uppercase;
+          color: var(--orange95);
+          margin-bottom: 12px;
+
+          @media (max-width:768px) {
+            @include font28;
+          }
+
+          @media (max-width:576px) {
+            @include font25;
+          }
+        }
+
+        p {
+          @include font18;
+          color: var(--gray70);
+
+          @media (max-width: 576px) {
+            @include font16;
+          }
+        }
+
+        .learnmorelink {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          img {
+            width: 68px;
+            height: 68px;
+
+            @media (max-width:1024px) {
+              width: 58px;
+              height: 58px;
+            }
+
+            @media (max-width:768px) {
+              width: 45px;
+              height: 45px;
+            }
+
+            @media (max-width:576px) {
+              width: 40px;
+              height: 40px;
+            }
+          }
+
+          span {
+            @include font18;
+            color: var(--gray70);
+
+            @media (max-width:576px) {
+              @include font16;
+            }
+          }
+        }
+      }
+    }
+  }
 }

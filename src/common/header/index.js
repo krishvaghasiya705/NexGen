@@ -3,13 +3,16 @@ import React, { useState } from "react";
 import styles from "./header.module.scss";
 import Link from "next/link";
 import Logo from "@/assets/icon/logo";
+import Menuicon from "@/assets/icon/menuicon";
+import Sidebar from "../sidebar";
+import Crossicon from "@/assets/icon/crossicon";
 
 export default function Header() {
-  // const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const [isSidebarOpen, setSidebarOpen] = useState(false);
 
-  // const toggleSidebar = () => {
-  //   setSidebarOpen(!isSidebarOpen);
-  // };
+  const toggleSidebar = () => {
+    setSidebarOpen(!isSidebarOpen);
+  };
 
   return (
     <>
@@ -44,13 +47,13 @@ export default function Header() {
                 <span>Contact Us</span>
               </Link>
             </div>
+            <div className={styles.menuicon} onClick={toggleSidebar}>
+              {isSidebarOpen ? <Crossicon /> : <Menuicon />}
+            </div>
           </div>
         </div>
       </header>
-      {/* <div className={styles.headermenuicon} onClick={toggleSidebar}>
-              {isSidebarOpen ? <Crossicon /> : <Menuicon />}
-            </div> */}
-      {/* <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} /> */}
+      <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
     </>
   );
 }

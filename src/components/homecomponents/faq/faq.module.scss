@@ -87,6 +87,7 @@
 
   .faqsectionflxmain {
     display: flex;
+    align-items: flex-start;
     gap: 20px;
 
     @media (max-width: 1024px) {
@@ -267,7 +268,8 @@
             margin-bottom: 10px;
 
             @media (max-width: 576px) {
-              @include font16;
+              @include font15;
+              letter-spacing: 1px;
             }
           }
 

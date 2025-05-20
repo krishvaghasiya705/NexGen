@@ -439,6 +439,10 @@
         color: var(--gray70);
         font-family: var(--robotomono);
 
+        @media (max-width: 1280px) {
+          @include font16;
+        }
+
         @media (max-width: 576px) {
           @include font14;
         }
@@ -467,6 +471,11 @@
               padding-left: 0;
               border-left: none;
             }
+          }
+
+          @media (max-width: 1280px) {
+            @include font16;
+            font-weight: 500;
           }
 
           @media (max-width: 576px) {

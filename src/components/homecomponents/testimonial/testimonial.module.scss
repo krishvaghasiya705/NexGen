@@ -192,6 +192,8 @@
 
             p {
               @include font20;
+              max-width: 178px;
+              word-wrap: break-word;
               color: var(--orange90);
 
               @media (max-width:768px) {

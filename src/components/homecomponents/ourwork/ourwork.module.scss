@@ -125,7 +125,7 @@
         align-items: center;
         margin-bottom: 40px;
 
-        @media (max-width:1280px) {
+        @media (max-width:1440px) {
           flex-direction: column;
           align-items: flex-start;
           gap: 10px;
@@ -233,7 +233,7 @@
             @include font18;
             color: var(--gray90);
           
-            @media (max-width: 768px) {
+            @media (max-width: 1440px) {
               @include font16;
             }
           

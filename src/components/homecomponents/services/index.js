@@ -19,23 +19,19 @@ export default function Services() {
           <div className={styles.servicessectiongrid}>
             <div className={styles.servicesbox}>
               <div className={styles.servicesboxtopmain}>
-                <div className={styles.servicesboxtopmain}>
-                  <div className={styles.servicestopleft}>
-                    <Penicon />
-                    <span>Web Design</span>
-                  </div>
-                  <div>
-                    <Link href={"/"} className={styles.bookcalllinkmain}>
-                      <Image
-                        src={arrowcircleimage}
-                        alt="arrowcircleimage"
-                        width={1000}
-                        heigth={1000}
-                      />
-                      <span>Book A Call</span>
-                    </Link>
-                  </div>
+                <div className={styles.servicestopleft}>
+                  <Penicon />
+                  <span>Web Design</span>
                 </div>
+                <Link href={"/"} className={styles.bookcalllinkmain}>
+                  <Image
+                    src={arrowcircleimage}
+                    alt="arrowcircleimage"
+                    width={1000}
+                    heigth={1000}
+                  />
+                  <span>Book A Call</span>
+                </Link>
               </div>
               <div className={styles.serviceboxbottom}>
                 <p>
@@ -47,23 +43,19 @@ export default function Services() {
             </div>
             <div className={styles.servicesbox}>
               <div className={styles.servicesboxtopmain}>
-                <div className={styles.servicesboxtopmain}>
-                  <div className={styles.servicestopleft}>
-                    <Mobdevicon />
-                    <span>Mobile App Development</span>
-                  </div>
-                  <div>
-                    <Link href={"/"} className={styles.bookcalllinkmain}>
-                      <Image
-                        src={arrowcircleimage}
-                        alt="arrowcircleimage"
-                        width={1000}
-                        heigth={1000}
-                        />
-                      <span>Book A Call</span>
-                    </Link>
-                  </div>
+                <div className={styles.servicestopleft}>
+                  <Mobdevicon />
+                  <span>Mobile App Development</span>
                 </div>
+                <Link href={"/"} className={styles.bookcalllinkmain}>
+                  <Image
+                    src={arrowcircleimage}
+                    alt="arrowcircleimage"
+                    width={1000}
+                    heigth={1000}
+                  />
+                  <span>Book A Call</span>
+                </Link>
               </div>
               <div className={styles.serviceboxbottom}>
                 <p>
@@ -76,23 +68,19 @@ export default function Services() {
             </div>
             <div className={styles.servicesbox}>
               <div className={styles.servicesboxtopmain}>
-                <div className={styles.servicesboxtopmain}>
-                  <div className={styles.servicestopleft}>
-                    <Webdevicon />
-                    <span>Web Development</span>
-                  </div>
-                  <div>
-                    <Link href={"/"} className={styles.bookcalllinkmain}>
-                      <Image
-                        src={arrowcircleimage}
-                        alt="arrowcircleimage"
-                        width={1000}
-                        heigth={1000}
-                      />
-                      <span>Book A Call</span>
-                    </Link>
-                  </div>
+                <div className={styles.servicestopleft}>
+                  <Webdevicon />
+                  <span>Web Development</span>
                 </div>
+                <Link href={"/"} className={styles.bookcalllinkmain}>
+                  <Image
+                    src={arrowcircleimage}
+                    alt="arrowcircleimage"
+                    width={1000}
+                    heigth={1000}
+                  />
+                  <span>Book A Call</span>
+                </Link>
               </div>
               <div className={styles.serviceboxbottom}>
                 <p>
@@ -105,23 +93,19 @@ export default function Services() {
             </div>
             <div className={styles.servicesbox}>
               <div className={styles.servicesboxtopmain}>
-                <div className={styles.servicesboxtopmain}>
-                  <div className={styles.servicestopleft}>
-                    <Digitalmarketingicon />
-                    <span>Digital Marketing</span>
-                  </div>
-                  <div>
-                    <Link href={"/"} className={styles.bookcalllinkmain}>
-                      <Image
-                        src={arrowcircleimage}
-                        alt="arrowcircleimage"
-                        width={1000}
-                        heigth={1000}
-                      />
-                      <span>Book A Call</span>
-                    </Link>
-                  </div>
+                <div className={styles.servicestopleft}>
+                  <Digitalmarketingicon />
+                  <span>Digital Marketing</span>
                 </div>
+                <Link href={"/"} className={styles.bookcalllinkmain}>
+                  <Image
+                    src={arrowcircleimage}
+                    alt="arrowcircleimage"
+                    width={1000}
+                    heigth={1000}
+                  />
+                  <span>Book A Call</span>
+                </Link>
               </div>
               <div className={styles.serviceboxbottom}>
                 <p>

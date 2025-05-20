@@ -20,13 +20,9 @@
       width: 100%;
       background-color: var(--black3);
       border-radius: 20px;
-      padding: 100px 20px 20px 20px;
+      padding: 27px 20px 20px 20px;
 
       @media (max-width: 1024px) {
-        padding: 50px 20px 20px 20px;
-      }
-
-      @media (max-width: 768px) {
         padding: 20px;
       }
 
@@ -72,11 +68,12 @@
           }
 
           .herobannerlinkmain {
-            position: absolute;
-            top: 20px;
-            right: 0;
+            // position: absolute;
+            // top: 20px;
+            // right: 0;
             display: flex;
             align-items: center;
+            max-width: 300px;
             // padding-top: 20px;
             
             // margin-left: -50px;
@@ -85,7 +82,7 @@
               // margin-left: 0;
               // padding-top: 0;
               gap: 10px;
-              position: static;
+              // position: static;
             }
 
             .linkicon {
@@ -159,6 +156,14 @@
               @include font24;
               color: var(--orange60);
               text-transform: uppercase;
+
+              @media (max-width:768px) {
+                @include font22;
+              }
+
+              @media (max-width:576px) {
+                @include font20;
+              }
             }
           }
         }
@@ -186,6 +191,9 @@
       width: 100%;
       background-color: var(--black5);
       border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       
       @media (max-width: 1440px) {
         max-width: 450px;
@@ -197,6 +205,10 @@
 
       .herobannerimagediv {
         position: relative;
+
+        @media (max-width:1440px) {
+          height: 100%;
+        }
 
         @media (max-width:768px) {
           overflow: hidden;
@@ -251,6 +263,10 @@
           height: 465px;
           border-radius: 20px 20px 0 0;
 
+          @media (max-width:1440px) {
+            height: 100%;
+          }
+
           @media (max-width:768px) {
             height: 350px;
           }
@@ -293,11 +309,11 @@
     gap: 20px;
     
     @media (max-width: 1440px) {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
     
-    @media (max-width: 1024px) {
-      grid-template-columns: repeat(3, 1fr);
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
     }
     
     @media (max-width: 576px) {
@@ -309,12 +325,12 @@
       background-color: var(--black3);
       padding: 30px 20px;
       border-radius: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
       @media (max-width:1024px) {
         padding: 20px 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
       }
 
       @media (max-width:768px) {

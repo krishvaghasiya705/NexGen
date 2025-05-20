@@ -68,7 +68,7 @@
         justify-content: space-between;
         
         @media (max-width: 1440px) {
-          padding: 40px;
+          padding: 40px 20px;
         }
         
         @media (max-width: 1024px) {
@@ -124,7 +124,7 @@
               }
 
               @media (max-width: 576px) {
-                @include font20;
+                @include font18;
               }
             }
 
@@ -167,6 +167,7 @@
             span {
               @include font20;
               font-weight: 500;
+              font-family: var(--robotomono);
               text-transform: uppercase;
               color: var(--gray70);
 

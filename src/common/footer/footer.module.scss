@@ -88,6 +88,7 @@
         @include font18;
         text-transform: uppercase;
         color: var(--orange90);
+        white-space: nowrap;
 
         @media (max-width: 576px) {
           @include font16;
@@ -140,7 +141,10 @@
       display: flex;
       flex-direction: column;
       gap: 80px;
-      height: 100%;
+
+      @media (max-width: 1440px) {
+        height: 100%;
+      }
 
       @media (max-width: 768px) {
         gap: 50px;
@@ -222,33 +226,41 @@
   }
 
   .footerright {
-    max-width: 1053px;
+    // max-width: 1053px;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    justify-content: space-between;
+    width: calc(100% - 157px);
     gap: 20px;
+
+    @media (max-width:1024px) {
+      width: 100%;
+    }
 
     .footerlinksmain {
       background-color: var(--black3);
       padding: 60px;
       border-radius: 16px;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 60px;
-
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      
+      @media (max-width: 1440px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
       @media (max-width: 1024px) {
-        gap: 30px;
         padding: 40px;
-        grid-template-columns: repeat(3, 1fr);
       }
 
       @media (max-width: 768px) {
         padding: 30px;
-        grid-template-columns: repeat(2, 1fr);
       }
-
+      
       @media (max-width: 576px) {
         padding: 20px;
+        gap: 15px;
       }
 
       .footerlinkverticlemain {
@@ -287,12 +299,15 @@
             gap: 8px;
           }
 
-          a {
-            @include font18;
-            color: var(--gray50);
+          .upcominglink {
             display: flex;
             align-items: center;
             gap: 8px;
+          }
+
+          a {
+            @include font18;
+            color: var(--gray50);
 
             @media (max-width: 576px) {
               @include font16;

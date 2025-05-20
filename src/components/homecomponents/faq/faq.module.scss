@@ -90,11 +90,14 @@
     }
 
     .faqsectionflxleft {
-      width: 100%;
       max-width: 1054px;
       display: flex;
       flex-direction: column;
       gap: 20px;
+
+      @media (max-width:1440px) {
+        width: 100%;
+      }
 
       .faqboxmain {
         background-color: var(--black3);
@@ -137,7 +140,7 @@
             transition: max-height 0.4s ease;
 
             @media (max-width: 768px) {
-              margin-top: 10px;
+              margin-top: 20px;
             }
 
             @media (max-width: 576px) {
@@ -198,7 +201,6 @@
       width: 100%;
       background-color: var(--black3);
       padding: 60px;
-      height: -webkit-fill-available;
       border-radius: 14px;
 
       @media (max-width: 1024px) {

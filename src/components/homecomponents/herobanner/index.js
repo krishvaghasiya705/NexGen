@@ -33,22 +33,24 @@ export default function Herobanner() {
             <div className={styles.herobannerleftcontentbox}>
               <div className={styles.herobannerlefttitle}>
                 <h1>Digital Solutions That Drive Success</h1>
-                <Link href={"/"} className={styles.herobannerlinkmain}>
-                  <div className={styles.linkicon}>
-                    <Image
-                      src={ringshape}
-                      alt="ringshape"
-                      width={1000}
-                      height={1000}
-                    />
-                    <div className={styles.linkarrowmain}>
-                      <div className={styles.linkarrow}>
-                        <Rightarrow />
+                <div>
+                  <Link href={"/"} className={styles.herobannerlinkmain}>
+                    <div className={styles.linkicon}>
+                      <Image
+                        src={ringshape}
+                        alt="ringshape"
+                        width={1000}
+                        height={1000}
+                      />
+                      <div className={styles.linkarrowmain}>
+                        <div className={styles.linkarrow}>
+                          <Rightarrow />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <span>Start a Project</span>
-                </Link>
+                    <span>Start a Project</span>
+                  </Link>
+                </div>
               </div>
               <p>
                 At NexGen, we believe in the transformative power of digital

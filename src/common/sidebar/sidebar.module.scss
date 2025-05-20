@@ -29,6 +29,11 @@
   opacity: 0;
   transition: all 0.4s ease-in-out;
 
+  @media (max-width: 768px) {
+    margin: 0 20px;
+    width: calc(100% - 40px);
+  }
+
   &.open {
     transform: translateY(0%);
     opacity: 1;
@@ -43,9 +48,48 @@
     .sidebarbody {
       display: flex;
       flex-direction: column;
-      gap: 30px;
-      // justify-content: space-between;
+      gap: 10px;
       padding: 24px 50px;
+
+      @media (max-width: 768px) {
+        padding: 24px 20px;
+      }
+
+      .sidebarlink {
+        padding: 10px 0;
+        @include font28;
+        color: var(--orange95);
+        display: block;
+        text-transform: uppercase;
+        border-bottom: 1px solid var(--orange70);
+        transition: 0.4s ease-in-out;
+
+        @media (max-width: 576px) {
+          @include font20;
+        }
+
+        &:hover {
+          transform: translateX(10px);
+        }
+      }
+
+      .contactlink {
+        button {
+          padding: 10px 20px;
+          @include font28;
+          background-color: var(--orange60);
+          color: var(--black2);
+          text-transform: uppercase;
+          border: none;
+          border-radius: 12px;
+          transition: 0.4s ease-in-out;
+
+          @media (max-width: 576px) {
+            padding: 8px 14px;
+            @include font20;
+          }
+        }
+      }
     }
   }
 }

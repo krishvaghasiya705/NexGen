@@ -26,25 +26,25 @@ export default function Header() {
             </div>
             <div className={styles.headerlinksflxmain}>
               <Link href={"/"} className={`${styles.headerlink} ${styles.active}`}>
-                <span>Home</span>
+                Home
               </Link>
               <Link href={"/"} className={styles.headerlink}>
-                <span>Services</span>
+                Services
               </Link>
               <Link href={"/"} className={styles.headerlink}>
-                <span>Projects</span>
+                Projects
               </Link>
               <Link href={"/"} className={styles.headerlink}>
-                <span>About</span>
+                About
               </Link>
               <Link href={"/"} className={styles.headerlink}>
-                <span>Careers</span>
+                Careers
               </Link>
               <Link href={"/"} className={styles.headerlink}>
-                <span>Blogs</span>
+                Blogs
               </Link>
               <Link href={"/"} className={styles.contactbutton}>
-                <span>Contact Us</span>
+                Contact Us
               </Link>
             </div>
             <div className={styles.menuicon} onClick={toggleSidebar}>

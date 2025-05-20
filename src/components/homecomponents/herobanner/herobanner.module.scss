@@ -78,18 +78,20 @@
           }
 
           .herobannerlinkmain {
-            position: absolute;
-            top: 0;
-            right: 0;
+            // position: absolute;
+            // top: 20px;
+            // right: 0;
             display: flex;
             align-items: center;
-            height: 117px;
-
+            padding-top: 20px;
+            
+            // margin-left: -50px;
+            
             @media (max-width: 1024px) {
-              margin-left: 0;
+              // margin-left: 0;
+              padding-top: 0;
               gap: 10px;
-              height: auto;
-              position: static;
+              // position: static;
             }
 
             .linkicon {
@@ -190,13 +192,13 @@
       @media (max-width: 1440px) {
         width: auto;
       }
-
+      
       @media (max-width: 1024px) {
+        width: 100%;
         max-width: 100%;
       }
 
       .herobannerimagediv {
-        overflow: hidden;
         position: relative;
 
         .arrowlinkmain {
@@ -289,6 +291,10 @@
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
     
+    @media (max-width: 1440px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    
     @media (max-width: 1024px) {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -301,6 +307,13 @@
       background-color: var(--black3);
       padding: 30px 20px;
       border-radius: 14px;
+
+      @media (max-width:1024px) {
+        padding: 20px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
 
       @media (max-width:768px) {
         padding: 20px 15px;

@@ -161,8 +161,8 @@ export default function Footer() {
                 </Link>
                 <div className={styles.footerlinkverticle}>
                   <Link href={"/"}>Business</Link>
-                  <Link href={"/"}>Design <button type="button" className={styles.soonbutton}>Soon</button></Link>
-                  <Link href={"/"}>Development <button type="button" className={styles.soonbutton}>Soon</button></Link>
+                  <Link href={"/"} className={styles.upcominglink}>Design <button type="button" className={styles.soonbutton}>Soon</button></Link>
+                  <Link href={"/"} className={styles.upcominglink}>Development <button type="button" className={styles.soonbutton}>Soon</button></Link>
                 </div>
               </div>
             </div>

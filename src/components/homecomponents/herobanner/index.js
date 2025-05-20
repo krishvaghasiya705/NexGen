@@ -23,6 +23,11 @@ export default function Herobanner() {
     "Branding",
     "Website Development",
     "Mobile App Development",
+    "Digital Marketing",
+    "Website Design",
+    "Branding",
+    "Website Development",
+    "Mobile App Development"
   ];
 
   return (

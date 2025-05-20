@@ -24,15 +24,17 @@ export default function Services() {
                     <Penicon />
                     <span>Web Design</span>
                   </div>
-                  <Link href={"/"} className={styles.bookcalllinkmain}>
-                    <Image
-                      src={arrowcircleimage}
-                      alt="arrowcircleimage"
-                      width={1000}
-                      heigth={1000}
-                    />
-                    <span>Book A Call</span>
-                  </Link>
+                  <div>
+                    <Link href={"/"} className={styles.bookcalllinkmain}>
+                      <Image
+                        src={arrowcircleimage}
+                        alt="arrowcircleimage"
+                        width={1000}
+                        heigth={1000}
+                      />
+                      <span>Book A Call</span>
+                    </Link>
+                  </div>
                 </div>
               </div>
               <div className={styles.serviceboxbottom}>
@@ -50,15 +52,17 @@ export default function Services() {
                     <Mobdevicon />
                     <span>Mobile App Development</span>
                   </div>
-                  <Link href={"/"} className={styles.bookcalllinkmain}>
-                    <Image
-                      src={arrowcircleimage}
-                      alt="arrowcircleimage"
-                      width={1000}
-                      heigth={1000}
-                    />
-                    <span>Book A Call</span>
-                  </Link>
+                  <div>
+                    <Link href={"/"} className={styles.bookcalllinkmain}>
+                      <Image
+                        src={arrowcircleimage}
+                        alt="arrowcircleimage"
+                        width={1000}
+                        heigth={1000}
+                        />
+                      <span>Book A Call</span>
+                    </Link>
+                  </div>
                 </div>
               </div>
               <div className={styles.serviceboxbottom}>
@@ -77,15 +81,17 @@ export default function Services() {
                     <Webdevicon />
                     <span>Web Development</span>
                   </div>
-                  <Link href={"/"} className={styles.bookcalllinkmain}>
-                    <Image
-                      src={arrowcircleimage}
-                      alt="arrowcircleimage"
-                      width={1000}
-                      heigth={1000}
-                    />
-                    <span>Book A Call</span>
-                  </Link>
+                  <div>
+                    <Link href={"/"} className={styles.bookcalllinkmain}>
+                      <Image
+                        src={arrowcircleimage}
+                        alt="arrowcircleimage"
+                        width={1000}
+                        heigth={1000}
+                      />
+                      <span>Book A Call</span>
+                    </Link>
+                  </div>
                 </div>
               </div>
               <div className={styles.serviceboxbottom}>
@@ -104,15 +110,17 @@ export default function Services() {
                     <Digitalmarketingicon />
                     <span>Digital Marketing</span>
                   </div>
-                  <Link href={"/"} className={styles.bookcalllinkmain}>
-                    <Image
-                      src={arrowcircleimage}
-                      alt="arrowcircleimage"
-                      width={1000}
-                      heigth={1000}
-                    />
-                    <span>Book A Call</span>
-                  </Link>
+                  <div>
+                    <Link href={"/"} className={styles.bookcalllinkmain}>
+                      <Image
+                        src={arrowcircleimage}
+                        alt="arrowcircleimage"
+                        width={1000}
+                        heigth={1000}
+                      />
+                      <span>Book A Call</span>
+                    </Link>
+                  </div>
                 </div>
               </div>
               <div className={styles.serviceboxbottom}>

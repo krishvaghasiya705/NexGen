@@ -9,7 +9,6 @@
 
   .herobannerflxmain {
     display: flex;
-    align-items: center;
     gap: 20px;
 
     @media (max-width: 1024px) {
@@ -24,7 +23,6 @@
       padding: 100px 20px 20px 20px;
 
       @media (max-width: 1024px) {
-        max-width: 100%;
         padding: 50px 20px 20px 20px;
       }
 
@@ -36,20 +34,16 @@
         padding-left: 60px;
 
         @media (max-width: 1024px) {
-          padding-left: 30px;
-        }
-
-        @media (max-width: 768px) {
           padding-left: 0;
         }
 
         .herobannerlefttitle {
-          display: flex;
           margin-bottom: 20px;
           position: relative;
 
-          @media (max-width: 1024px) {
+          @media (max-width: 1440px) {
             gap: 20px;
+            display: flex;
             flex-direction: column;
           }
 
@@ -83,13 +77,13 @@
             right: 0;
             display: flex;
             align-items: center;
-            padding-top: 20px;
+            // padding-top: 20px;
             
             // margin-left: -50px;
             
-            @media (max-width: 1024px) {
+            @media (max-width: 1440px) {
               // margin-left: 0;
-              padding-top: 0;
+              // padding-top: 0;
               gap: 10px;
               position: static;
             }
@@ -178,6 +172,10 @@
 
           @media (max-width: 1024px) {
             margin-bottom: 40px;
+          }
+
+          @media (max-width: 576px) {
+            @include font16;
           }
         }
       }
@@ -303,6 +301,7 @@
     }
     
     @media (max-width: 576px) {
+      padding: 10px;
       grid-template-columns: repeat(1, 1fr);
     }
 
@@ -354,7 +353,7 @@
 
     .knowmorebox {
       background-color: var(--black3);
-      padding: 30px 20px;
+      padding: 30px 10px;
       border-radius: 14px;
       display: flex;
       justify-content: center;

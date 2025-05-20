@@ -12,6 +12,10 @@
     border-radius: 20px;
     padding: 20px;
 
+    @media (max-width:576px) {
+      padding: 10px;
+    }
+
     .testimonialtitle {
       padding: 50px;
       background-color: var(--black3);

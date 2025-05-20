@@ -12,6 +12,10 @@
     border-radius: 20px;
     padding: 20px;
 
+    @media (max-width:576px) {
+      padding: 10px;
+    }
+
     .reasonsectiontitle {
       background-color: var(--black3);
       border-radius: 12px;
@@ -69,7 +73,7 @@
       .reasonbox {
         background-color: var(--black3);
         border-radius: 14px;
-        padding: 40px;
+        padding: 36px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;

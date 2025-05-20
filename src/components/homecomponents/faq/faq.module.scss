@@ -106,6 +106,7 @@
         border: 1px solid var(--black5);
         padding: 40px 60px;
         border-radius: 16px;
+        transition: all .4s ease-in-out;
 
         @media (max-width: 1024px) {
           padding: 30px 50px;
@@ -120,6 +121,7 @@
         }
 
         &.faqboxmainactive {
+          transition: all .4s ease-in-out;
           padding: 60px;
 
           @media (max-width: 1024px) {
@@ -139,13 +141,14 @@
             padding-top: 30px;
             margin-top: 4px;
             border-top: 1px solid var(--black6);
-            transition: max-height 0.4s ease;
-
+            transition: all .4s ease-in-out;
+            
             @media (max-width: 768px) {
               margin-top: 20px;
             }
-
+            
             @media (max-width: 576px) {
+              border-top: 2px solid var(--black6);
               padding: 20px 0;
             }
           }
@@ -157,6 +160,7 @@
           align-items: center;
           gap: 30px;
           cursor: pointer;
+          transition: all .4s ease-in-out;
 
           p {
             @include font22;
@@ -179,12 +183,16 @@
 
         .faqboxdetails {
           max-height: 0;
-          max-width: 832px;
+          width: calc(100% - 72px);
           overflow: hidden;
           border-top: none;
           padding-top: 0;
           margin-top: 0;
-          transition: max-height 0.4s ease;
+          transition: all .4s ease-in-out;
+          
+          @media (max-width:1024px) {
+            width: calc(100% - 52px);
+          }
 
           p {
             @include font18;

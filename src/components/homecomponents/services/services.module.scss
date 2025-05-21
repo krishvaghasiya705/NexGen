@@ -165,6 +165,11 @@
               width: 52px;
               height: 52px;
 
+              @media (max-width: 1280px) {
+                width: 45px;
+                height: 45px;
+              }
+
               @media (max-width: 768px) {
                 width: 50px;
                 height: 50px;
@@ -182,9 +187,14 @@
               font-family: var(--robotomono);
               text-transform: uppercase;
               color: var(--gray70);
-
+              
               @media (max-width: 1440px) {
                 @include font18;
+              }
+              
+              @media (max-width: 1280px) {
+                @include font16;
+                font-weight: 500;
               }
 
               @media (max-width: 768px) {

@@ -211,7 +211,7 @@
         .serviceboxbottom {
           p {
             @include font18;
-            font-weight: 500;
+            max-width: 740px;
             color: var(--gray70);
             margin-bottom: 20px;
 

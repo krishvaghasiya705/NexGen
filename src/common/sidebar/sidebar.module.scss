@@ -41,6 +41,7 @@
 
   .sidebarbodymain {
     height: calc(100% - 40px);
+    overflow: auto;
     background-color: var(--black3);
     border: 1px solid var(--black4);
     border-radius: 16px;

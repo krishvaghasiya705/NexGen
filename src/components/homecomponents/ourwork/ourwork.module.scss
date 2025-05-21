@@ -397,7 +397,7 @@
             
             img {
               border-radius: 50%;
-              opacity: 1;
+              filter: grayscale(100%);
             }
 
             @media (max-width:576px) {

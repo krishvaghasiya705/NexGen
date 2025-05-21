@@ -420,6 +420,10 @@
           @media (max-height: 1024px) {
             @include font18;
           }
+
+          @media (max-height: 576px) {
+            @include font16;
+          }
         }
       }
     }

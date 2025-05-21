@@ -98,6 +98,10 @@
       margin-bottom: 0;
     }
     
+    @media (max-width: 1280px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
     @media (max-width: 1024px) {
       grid-template-columns: repeat(1, 1fr);
     }
@@ -107,8 +111,13 @@
       padding: 60px 40px;
       border-radius: 14px;
 
+      @media (max-width: 1280px) {
+        grid-column: span 2;
+      }
+      
       @media (max-width: 1024px) {
         padding: 40px 20px;
+        grid-column: span 1;
       }
 
       @media (max-width: 768px) {
@@ -190,6 +199,14 @@
             @include font20;
             color: var(--gray70);
             text-transform: uppercase;
+
+            @media (max-width:768px) {
+              @include font18;
+            }
+
+            @media (max-width:576px) {
+              @include font16;
+            }
           }
         }
       }

@@ -111,6 +111,10 @@
         border-radius: 16px;
         transition: all .4s ease-in-out;
 
+        @media (max-width: 1280px) {
+          padding: 30px;
+        }
+
         @media (max-width: 1024px) {
           padding: 30px 50px;
         }
@@ -126,6 +130,10 @@
         &.faqboxmainactive {
           transition: all .4s ease-in-out;
           padding: 60px;
+
+          @media (max-width: 1280px) {
+            padding: 30px;
+          }
 
           @media (max-width: 1024px) {
             padding: 50px;
@@ -181,6 +189,7 @@
           .faqboxtitleicon {
             width: 52px;
             height: 52px;
+            min-width: 52px;
           }
         }
 
@@ -215,6 +224,10 @@
       background-color: var(--black3);
       padding: 60px;
       border-radius: 14px;
+
+      @media (max-width: 1280px) {
+        padding: 30px;
+      }
 
       @media (max-width: 1024px) {
         max-width: 100%;

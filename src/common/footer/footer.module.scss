@@ -410,7 +410,7 @@
 
     .footercopyrightmain {
       background-color: var(--black3);
-      padding: 50px;
+      padding: 40px;
       border-radius: 16px;
       display: flex;
       justify-content: space-between;
@@ -436,13 +436,9 @@
       }
 
       p {
-        @include font18;
+        @include font16;
         color: var(--gray70);
         font-family: var(--robotomono);
-
-        @media (max-width: 1280px) {
-          @include font16;
-        }
 
         @media (max-width: 576px) {
           @include font14;
@@ -450,6 +446,8 @@
       }
 
       .termslink {
+        max-width: 331px;
+        width: 100%;
         display: flex;
         align-items: center;
         gap: 11px;
@@ -459,7 +457,7 @@
         }
 
         a {
-          @include font18;
+          @include font16;
           font-family: var(--robotomono);
           color: var(--gray70);
 

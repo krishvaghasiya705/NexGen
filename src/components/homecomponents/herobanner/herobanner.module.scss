@@ -24,6 +24,7 @@
 
       @media (max-width: 1440px) {
         padding: 80px 20px 20px 20px;
+        width: auto;
       }
 
       @media (max-width: 1024px) {
@@ -325,6 +326,10 @@
     gap: 20px;
     
     @media (max-width: 1440px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    
+    @media (max-width: 1024px) {
       grid-template-columns: repeat(3, 1fr);
     }
     
@@ -336,7 +341,19 @@
       padding: 10px;
       grid-template-columns: repeat(1, 1fr);
     }
+    
+    .show {
+      display: none;
 
+      @media (max-width:1440px) {
+        display: block;
+      }
+
+      @media (max-width:1024px) {
+        display: none;
+      }
+    }
+    
     .coutingboxmain {
       background-color: var(--black3);
       padding: 30px 20px;
@@ -344,14 +361,28 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-
+      
+      
       @media (max-width:1024px) {
         padding: 20px 10px;
       }
-
+      
       @media (max-width:768px) {
         padding: 20px 15px;
       }
+      
+      // &:nth-child(6n + 5) {
+      //   @media (max-width:1440px) {
+      //     grid-column: span 2;
+      //     width: calc(50% - 10px);
+      //     margin-left: auto;
+      //   }
+
+      //   @media (max-width:1024px) {
+      //     grid-column: span 1;
+      //     width: 100%;
+      //   }
+      // }
 
       span {
         @include font18;
@@ -390,6 +421,17 @@
       display: flex;
       justify-content: center;
       align-items: center;
+
+      // @media (max-width:1440px) {
+      //   grid-column: span 2;
+      //   width: calc(50% - 10px);
+      //   margin-right: auto;
+      // }
+
+      // @media (max-width:1024px) {
+      //   grid-column: span 1;
+      //   width: 100%;
+      // }
 
       .knowmorelinkmain {
         display: flex;

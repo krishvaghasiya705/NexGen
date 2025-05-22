@@ -115,6 +115,7 @@ export default function Herobanner() {
             <span>FOLLOWER</span>
             <h3>420K</h3>
           </div>
+          <div className={styles.show}></div>
           <div className={styles.coutingboxmain}>
             <span>Years Of Experience</span>
             <h3>10+</h3>
@@ -130,6 +131,7 @@ export default function Herobanner() {
               <span>Know More</span>
             </Link>
           </div>
+          <div className={styles.show}></div>
         </div>
       </div>
     </div>

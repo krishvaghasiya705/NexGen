@@ -88,9 +88,9 @@
             align-items: center;
             max-width: 300px;
             // padding-top: 20px;
-            
+
             // margin-left: -50px;
-            
+
             @media (max-width: 1440px) {
               // margin-left: 0;
               // padding-top: 0;
@@ -98,22 +98,33 @@
               // position: static;
             }
 
+            &:hover {
+              .linkicon {
+                rotate: -20deg;
+              }
+
+              span {
+                transform: translateX(10px);
+              }
+            }
+
             .linkicon {
               position: relative;
               width: 77px;
               height: 77px;
+              transition: 0.4s ease-in-out;
 
-              @media (max-width:1024px) {
+              @media (max-width: 1024px) {
                 width: 60px;
                 height: 60px;
               }
 
-              @media (max-width:768px) {
+              @media (max-width: 768px) {
                 width: 50px;
                 height: 50px;
               }
 
-              @media (max-width:576px) {
+              @media (max-width: 576px) {
                 width: 40px;
                 height: 40px;
               }
@@ -137,17 +148,17 @@
                   justify-content: center;
                   align-items: center;
 
-                  @media (max-width:1024px) {
+                  @media (max-width: 1024px) {
                     width: 42px;
                     height: 42px;
                   }
 
-                  @media (max-width:768px) {
+                  @media (max-width: 768px) {
                     width: 32px;
                     height: 32px;
                   }
 
-                  @media (max-width:576px) {
+                  @media (max-width: 576px) {
                     width: 22px;
                     height: 22px;
                   }
@@ -156,7 +167,7 @@
                     width: 24px;
                     height: 24px;
 
-                    @media (max-width:1024px) {
+                    @media (max-width: 1024px) {
                       width: 20px;
                       height: 20px;
                     }
@@ -169,12 +180,14 @@
               @include font24;
               color: var(--orange60);
               text-transform: uppercase;
+              display: block;
+              transition: 0.4s ease-in-out;
 
-              @media (max-width:768px) {
+              @media (max-width: 768px) {
                 @include font22;
               }
 
-              @media (max-width:576px) {
+              @media (max-width: 576px) {
                 @include font20;
               }
             }
@@ -207,11 +220,11 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      
+
       @media (max-width: 1440px) {
         max-width: 450px;
       }
-      
+
       @media (max-width: 1024px) {
         max-width: 100%;
       }
@@ -219,12 +232,19 @@
       .herobannerimagediv {
         position: relative;
 
-        @media (max-width:1440px) {
+        @media (max-width: 1440px) {
           height: 100%;
         }
 
-        @media (max-width:768px) {
+        @media (max-width: 768px) {
           overflow: hidden;
+        }
+
+        &:hover {
+          .arrowlinkmain {
+            top: -25px;
+            right: -45px;
+          }
         }
 
         .arrowlinkmain {
@@ -236,20 +256,21 @@
           border-radius: 50%;
           width: 191px;
           height: 191px;
-          
-          @media (max-width:1024px) {
+          transition: 0.4s ease-in-out;
+
+          @media (max-width: 1024px) {
             width: 181px;
             height: 181px;
           }
-          
-          @media (max-width:768px) {
+
+          @media (max-width: 768px) {
             width: 150px;
             height: 150px;
           }
 
-          @media (max-width:576px) {
-          top: -10px;
-          right: -22px;
+          @media (max-width: 576px) {
+            top: -10px;
+            right: -22px;
             width: 100px;
             height: 100px;
           }
@@ -276,19 +297,19 @@
           height: 465px;
           border-radius: 20px 20px 0 0;
 
-          @media (max-width:1440px) {
+          @media (max-width: 1440px) {
             height: 100%;
           }
 
-          @media (max-width:1024px) {
+          @media (max-width: 1024px) {
             height: 400px;
           }
 
-          @media (max-width:768px) {
+          @media (max-width: 768px) {
             height: 350px;
           }
 
-          @media (max-width:576px) {
+          @media (max-width: 576px) {
             height: 300px;
           }
         }
@@ -299,7 +320,7 @@
 
         @media (max-width: 768px) {
           padding: 20px;
-        }        
+        }
 
         h2 {
           @include font24;
@@ -324,36 +345,36 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 20px;
-    
+
     @media (max-width: 1440px) {
       grid-template-columns: repeat(4, 1fr);
     }
-    
+
     @media (max-width: 1024px) {
       grid-template-columns: repeat(3, 1fr);
     }
-    
+
     @media (max-width: 768px) {
       grid-template-columns: repeat(2, 1fr);
     }
-    
+
     @media (max-width: 576px) {
       padding: 10px;
       grid-template-columns: repeat(1, 1fr);
     }
-    
+
     .show {
       display: none;
 
-      @media (max-width:1440px) {
+      @media (max-width: 1440px) {
         display: block;
       }
 
-      @media (max-width:1024px) {
+      @media (max-width: 1024px) {
         display: none;
       }
     }
-    
+
     .coutingboxmain {
       background-color: var(--black3);
       padding: 30px 20px;
@@ -361,16 +382,15 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      
-      
-      @media (max-width:1024px) {
+
+      @media (max-width: 1024px) {
         padding: 20px 10px;
       }
-      
-      @media (max-width:768px) {
+
+      @media (max-width: 768px) {
         padding: 20px 15px;
       }
-      
+
       // &:nth-child(6n + 5) {
       //   @media (max-width:1440px) {
       //     grid-column: span 2;
@@ -392,7 +412,7 @@
         display: block;
         margin-bottom: 20px;
 
-        @media (max-width:768px) {
+        @media (max-width: 768px) {
           @include font16;
           margin-bottom: 15px;
         }
@@ -404,11 +424,11 @@
         color: var(--orange70);
         text-align: center;
 
-        @media (max-width:1024px) {
+        @media (max-width: 1024px) {
           @include font50;
         }
 
-        @media (max-width:768px) {
+        @media (max-width: 768px) {
           @include font45;
         }
       }
@@ -433,21 +453,31 @@
       //   width: 100%;
       // }
 
+      &:hover {
+        .knowmorelinkmain {
+          img {
+            rotate: 20deg;
+          }
+        }
+      }
+
       .knowmorelinkmain {
+        transition: 0.4s ease-in-out;
         display: flex;
         align-items: center;
         gap: 10px;
 
         img {
+          transition: 0.4s ease-in-out;
           width: 68px;
           height: 68px;
 
-          @media (max-width:1024px) {
+          @media (max-width: 1024px) {
             width: 50px;
             height: 50px;
           }
 
-          @media (max-width:768px) {
+          @media (max-width: 768px) {
             width: 45px;
             height: 45px;
           }

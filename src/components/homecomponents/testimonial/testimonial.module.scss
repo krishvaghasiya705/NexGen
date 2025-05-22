@@ -12,7 +12,7 @@
     border-radius: 20px;
     padding: 20px;
 
-    @media (max-width:576px) {
+    @media (max-width: 576px) {
       padding: 10px;
     }
 
@@ -25,23 +25,23 @@
       justify-content: space-between;
       align-items: center;
 
-      @media (max-width:1024px) {
+      @media (max-width: 1024px) {
         padding: 40px;
       }
-        
-      @media (max-width:768px) {
+
+      @media (max-width: 768px) {
         padding: 30px;
       }
-        
-      @media (max-width:576px) {
+
+      @media (max-width: 576px) {
         padding: 20px;
       }
-    
-    @media (max-width:576px) {
-      padding: 20px;
-      margin-bottom: 10px;
-      flex-direction: column;
-      gap: 10px;
+
+      @media (max-width: 576px) {
+        padding: 20px;
+        margin-bottom: 10px;
+        flex-direction: column;
+        gap: 10px;
         align-items: flex-start;
       }
 
@@ -51,16 +51,16 @@
         color: var(--orange95);
 
         @media (max-width: 1024px) {
-        @include font38;
-      }
+          @include font38;
+        }
 
-      @media (max-width: 768px) {
-        @include font30;
-      }
+        @media (max-width: 768px) {
+          @include font30;
+        }
 
-      @media (max-width: 576px) {
-        @include font28;
-      }
+        @media (max-width: 576px) {
+          @include font28;
+        }
       }
 
       .testimoniallinkmain {
@@ -68,14 +68,21 @@
         align-items: center;
         gap: 10px;
 
+        &:hover {
+          img {
+            rotate: 20deg;
+          }
+        }
+
         img {
+          transition: 0.4s ease-in-out;
           width: 68px;
           height: 68px;
 
-          @media (max-width:768px) {
-          width: 50px;
-          height: 50px;
-        }
+          @media (max-width: 768px) {
+            width: 50px;
+            height: 50px;
+          }
         }
 
         span {
@@ -83,13 +90,13 @@
           text-transform: uppercase;
           color: var(--gray70);
 
-          @media (max-width:768px) {
-          @include font18;
-        }
+          @media (max-width: 768px) {
+            @include font18;
+          }
 
-        @media (max-width:576px) {
-          @include font16;
-        }
+          @media (max-width: 576px) {
+            @include font16;
+          }
         }
       }
     }
@@ -119,11 +126,11 @@
         .testimonialtopbox {
           padding: 40px;
 
-          @media (max-width:768px) {
+          @media (max-width: 768px) {
             padding: 30px;
           }
 
-          @media (max-width:576px) {
+          @media (max-width: 576px) {
             padding: 20px;
           }
 
@@ -133,11 +140,11 @@
             color: var(--orange95);
             margin-bottom: 24px;
 
-            @media (max-width:1024px) {
+            @media (max-width: 1024px) {
               @include font22;
             }
 
-            @media (max-width:768px) {
+            @media (max-width: 768px) {
               @include font20;
             }
           }
@@ -146,7 +153,7 @@
             @include font18;
             color: var(--gray70);
 
-            @media (max-width:576px) {
+            @media (max-width: 576px) {
               @include font16;
             }
           }
@@ -205,11 +212,11 @@
               word-wrap: break-word;
               color: var(--orange90);
 
-              @media (max-width:768px) {
+              @media (max-width: 768px) {
                 @include font18;
               }
 
-              @media (max-width:576px) {
+              @media (max-width: 576px) {
                 @include font16;
               }
             }
@@ -218,11 +225,11 @@
               @include font16;
               color: var(--gray50);
 
-              @media (max-width:768px) {
+              @media (max-width: 768px) {
                 @include font16;
               }
 
-              @media (max-width:768px) {
+              @media (max-width: 768px) {
                 @include font15;
               }
             }
@@ -233,17 +240,17 @@
             height: 35px;
             cursor: pointer;
 
-            @media (max-width:1440px) {
+            @media (max-width: 1440px) {
               width: 52px;
               height: 52px;
             }
 
-            @media (max-width:768px) {
+            @media (max-width: 768px) {
               width: 42px;
               height: 42px;
             }
 
-            @media (max-width:576px) {
+            @media (max-width: 576px) {
               width: 32px;
               height: 32px;
             }

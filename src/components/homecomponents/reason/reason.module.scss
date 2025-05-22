@@ -115,7 +115,14 @@
           align-items: center;
           gap: 10px;
 
+          &:hover {
+            img {
+              rotate: 20deg;
+            }
+          }
+
           img {
+            transition: .4s ease-in-out;
             width: 68px;
             height: 68px;
 

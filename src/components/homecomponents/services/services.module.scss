@@ -118,7 +118,7 @@
               @include font30;
               color: var(--orange95);
               text-transform: uppercase;
-              max-width: 366px;
+              max-width: 367px;
 
               @media (max-width: 1440px) {
                 @include font23;
@@ -161,7 +161,14 @@
               max-width: 181px;
             }
 
+            &:hover {
+              img {
+                rotate: 20deg;
+              }
+            }
+
             img {
+              transition: .4s ease-in-out;
               width: 52px;
               height: 52px;
 

@@ -58,7 +58,14 @@
       align-items: center;
       gap: 10px;
 
+      &:hover {
+        img {
+          rotate: 20deg;
+        }
+      }
+
       img {
+        transition: .4s ease-in-out;
         width: 68px;
         height: 68px;
 
@@ -335,6 +342,16 @@
         border-radius: 12px;
         padding: 18px 24px;
         margin-top: 50px;
+        cursor: pointer;
+        transition: .4s ease-in-out;
+        
+        &:hover {
+          background-color: var(--black2);
+          
+          span {
+            color: var(--white);
+          }
+        }
         
         @media (max-width:768px) {
           margin-top: 40px;
@@ -344,8 +361,9 @@
           padding: 15px 20px;
           margin-top: 30px;
         }
-
+        
         span {
+          transition: .4s ease-in-out;
           @include font18;
           color: var(--black2);
           text-transform: uppercase;

@@ -74,7 +74,14 @@
         padding: 15px 20px;
       }
 
+      &:hover {
+        svg {
+          rotate: 45deg;
+        }
+      }
+
       svg {
+        transition: 0.4s ease-in-out;
         width: 28px;
         height: 28px;
 
@@ -158,6 +165,14 @@
         gap: 30px;
       }
 
+      &:hover {
+        .footerleftboxhead {
+          img {
+            rotate: 20deg;
+          }
+        }
+      }
+
       .footerleftboxhead {
         display: flex;
         justify-content: space-between;
@@ -180,6 +195,7 @@
         }
 
         img {
+          transition: 0.4s ease-in-out;
           width: 52px;
           height: 52px;
 
@@ -201,16 +217,16 @@
           margin-bottom: 12px;
           color: var(--orange95);
           text-transform: uppercase;
-          
+
           @media (max-width: 768px) {
             @include font28;
           }
-          
+
           @media (max-width: 576px) {
             @include font24;
           }
         }
-        
+
         p {
           @include font18;
           font-weight: 400;
@@ -232,7 +248,7 @@
     width: calc(100% - 242px);
     gap: 20px;
 
-    @media (max-width:1024px) {
+    @media (max-width: 1024px) {
       width: 100%;
     }
 
@@ -243,12 +259,12 @@
       display: flex;
       justify-content: space-between;
       gap: 30px;
-      
+
       @media (max-width: 1440px) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
       }
-      
+
       @media (max-width: 1024px) {
         padding: 40px;
       }
@@ -256,7 +272,7 @@
       @media (max-width: 768px) {
         padding: 30px;
       }
-      
+
       @media (max-width: 576px) {
         padding: 20px;
         gap: 15px;
@@ -307,6 +323,11 @@
           a {
             @include font18;
             color: var(--gray50);
+            transition: .4s ease-in-out;
+
+            &:hover {
+              color: var(--white);
+            }
 
             @media (max-width: 576px) {
               @include font16;
@@ -333,7 +354,7 @@
 
     .newslettermain {
       background-color: var(--black3);
-      padding: 50px;
+      padding: 65px 50px;
       border-radius: 16px;
       display: flex;
       align-items: center;
@@ -404,6 +425,11 @@
           cursor: pointer;
           width: 52px;
           height: 52px;
+          transition: .4s ease-in-out;
+
+          &:hover {
+            rotate: 20deg;
+          }
         }
       }
     }
@@ -460,6 +486,11 @@
           @include font16;
           font-family: var(--robotomono);
           color: var(--gray70);
+          transition: .4s ease-in-out;
+
+          &:hover {
+            color: var(--white);
+          }
 
           &:last-child {
             display: block;

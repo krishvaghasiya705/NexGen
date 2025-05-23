@@ -127,6 +127,7 @@
 
               @media (max-width: 768px) {
                 @include font28;
+                max-width: 100%;
               }
 
               @media (max-width: 576px) {

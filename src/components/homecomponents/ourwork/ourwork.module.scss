@@ -240,6 +240,10 @@
           border-radius: 50px;
           border: none;
 
+          @media (max-width:576px) {
+            padding: 10px;
+          }
+
           .categoryname {
             @include font18;
             color: var(--gray70);
@@ -249,7 +253,7 @@
             }
 
             @media (max-width: 576px) {
-              @include font14;
+              @include font13;
             }
           }
 
@@ -269,7 +273,7 @@
             }
 
             @media (max-width: 576px) {
-              @include font14;
+              @include font13;
             }
           }
         }

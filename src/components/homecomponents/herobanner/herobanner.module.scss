@@ -241,6 +241,11 @@
           .arrowlinkmain {
             top: -25px;
             right: -45px;
+
+            @media (max-width:576px) {
+              top: -20px;
+              right: -20px;
+            }
           }
         }
 

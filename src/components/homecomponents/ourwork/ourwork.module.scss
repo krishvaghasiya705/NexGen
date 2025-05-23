@@ -240,7 +240,7 @@
           border-radius: 50px;
           border: none;
 
-          @media (max-width:576px) {
+          @media (max-width: 576px) {
             padding: 10px;
           }
 
@@ -454,7 +454,7 @@
               color: var(--white);
             }
           }
-          
+
           span {
             transition: 0.4s ease-in-out;
             @include font18;

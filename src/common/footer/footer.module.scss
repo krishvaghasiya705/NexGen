@@ -148,7 +148,7 @@
       display: flex;
       justify-content: space-between;
       flex-direction: column;
-      gap: 80px;
+      gap: 81px;
       height: 100%;
 
       @media (max-width: 768px) {
@@ -419,6 +419,12 @@
           padding: 18px 20px;
           @include font18;
           color: var(--gray40);
+          transition: .4s ease-in-out;
+
+          &:focus {
+            border-color: var(--white) !important;
+            color: var(--white);
+          }
         }
 
         img {

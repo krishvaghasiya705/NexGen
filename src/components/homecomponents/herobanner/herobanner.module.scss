@@ -231,13 +231,10 @@
 
       .herobannerimagediv {
         position: relative;
+        overflow: hidden;
 
         @media (max-width: 1440px) {
           height: 100%;
-        }
-
-        @media (max-width: 768px) {
-          overflow: hidden;
         }
 
         &:hover {
